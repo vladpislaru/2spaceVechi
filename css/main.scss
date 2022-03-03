@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+    
+}
+.wallimg{
+    background-image: url('/images/wallpaper.jpg');
+    /* Full height */
+    height: 100%; 
+    display: flex;
+    overflow: hidden;
+    justify-content: center;    
+    z-index: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(14, 14, 14);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 40px;
+    z-index: 8;
+}
+// .logo{
+//     content:url("/images/simb-neutru-negru2.png");
+//     filter: invert(0.75);
+//     transition: 0.5s;
+//     animation:cubic-bezier(0.075, 0.82, 0.165, 1);
+// }
+// .logo:hover{
+//     filter: invert(1);
+// }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: rgb(14, 14, 14);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0%;
+    ul{
+        list-style: none;
+    }
+    a{
+        white-space: nowrap;
+        text-align: center;
+        padding: 25px 25px 25px 32px;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 200;
+        color: #ffffff;
+        display:block;
+        transition: 0.5s;
+        animation:cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    a:hover{
+        color: #777777;
+        animation:cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+.menu{
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    float:right;
+    display: block;
+    z-index: 10;
+    position: fixed;
+    transition: 0.5s;
+}
+
+#container {
+    position: relative;  /* makes this the origin of its children */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #c {
+    width: 100%;  /* let our container decide our size */
+    height: 100%;
+    display: block;
+  }
+.logofull{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    width: 20%;
+    height: auto;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .stelute{
+    content:url("/images/stelute2.png");
+    background: repeat;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .wrappercuprins{
+    background-color: #ffffff;
+  }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 18px;}
+}
+@media only screen and (min-width: 1200px) {
+    .wrappercuprins {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .stelute{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-gap: 10rem;
+    cursor: pointer;
+    
+    .card {
+        box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+        transition: transform 0.3s;
+        padding: 20px;
+        border-radius: 20px;
+        
+        // @for $i from 1 through 6 {
+        //     &:nth-of-type(#{$i}) {
+        //         background: nth($colors, $i);
+        //     }  
+        // }
+        background:white;
+        
+        &:hover {
+            transform: translateY(-20px);
+        } 
+
+        .info {
+            padding: 10rem;
+            display: none;
+        }
+    
+        img {
+          float:center;
+          border-radius:20px;
+            width: 100%;
+        }
+
+        .desc {
+            color: gray;
+        }
+    }
+}
+.anim {
+    opacity: 0;
+}
+
+@keyframes anim1 {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to  {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+h1 {
+    margin: 5rem;
+    font-size: 45px;
+    background: -webkit-linear-gradient(#3d1293, #ed302c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  

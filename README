@@ -1,0 +1,8 @@
+INSTRUCTIUNI RULARE LOCALA SERVER
+---------------------------------
+1.Deschizi powershell
+2.Scrii: cd "/path/to/folderadacinasite". inlocuiesti tu cu path-ul in care e pus site-ul. poti sa ii dai si drag in terminal.
+3.Scrii: python -m http.server
+4.Intri in browser pe localhost:8000
+5.Dai pe html
+6.Profit
