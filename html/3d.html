@@ -3,121 +3,147 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Project EVA</title>
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="../css/main.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
 		<style>
 			body { 
 				margin: 0;
 				font-family: 'Poppins';
-				background-color: #16224A;
+				background-color: black;
 			}
 			.container{
 				overflow: hidden;
 			}
 			#c {   
-				width: 100%;  /* let our container decide our size */
+				width: 80%;  /* let our container decide our size */
 				height: 100%;
 				margin-left: auto;
 				margin-right: auto;
 				z-index: 0;
 				position: relative;
+				border-radius: 20px;
+				border-style:solid;
+				border-color: aliceblue;
+			}
+			#holder {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+				grid-gap: 10rem;
+				cursor: pointer;
 			}
 			table, th, td {
+				
 				border-collapse: collapse;
-				border-bottom:2pt solid rgb(255, 255, 255);
+				border-bottom:1pt solid rgb(255, 255, 255);
 				text-align: right;
 				font-size: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				
 			
 			}
 			table td:first-child{
 				text-align: left;
 				
 			}
-			table td{
-				box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.25);
-			}
-			table{
-				box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.25);
-			}
 		  </style>
 	</head>
-	<!-- <script src="../three.js/examples/jsm/loaders/OBJLoader.js"></script> -->
 	<body>
-		<header>
-			<a href="/html/index.html"style="display:block; width: 25px; height: 25px;"><img id="logotop" class="logo" src="/images/simb-neutru-alb2.png" style="display:block; width: 25px; height: 25px;margin: 10px;"></img></a>
-			<!-- <img class="menu" src="/images/menu_white.png" onclick="openNav()"></img> -->
+		<div class="wrapper">
+			<header>
+				<a href="../html/index.html"style="display:block; width: 25px; height: 25px;"><img id="logotop" class="logo" src="../images/simb-neutru-alb2.png" style="display:block; width: 25px; height: 25px;margin: 10px;"></img></a>
+				<img class="menu" src="../images/menu_white.png" onclick="openNav()"></img>
+				
+				<nav>
+					<div id="mySidenav" class="sidenav">
+						<ul>
+							<li><a href="../html/index.html#About" onclick="openNav()">About</a></li>
+							<li><a href="../html/index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
+							<li><a href="../html/3d.html" onclick="openNav()">Project EVA</a></li>
+							<li><a href="../html/index.html#" onclick="openNav()">Sponsors</a></li>
+							<li><a href="../html/index.html#Contact" onclick="openNav()">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+		</div>
+		
+		
+		<div id="holder">
 			
-			<nav>
-				<div id="mySidenav" class="sidenav">
-					<ul>
-						<li><a href="#About" onclick="openNav()">About</a></li>
-						<li><a href="#EuRoC" onclick="openNav()">EuRoC</a></li>
-						<li><a href="/html/3d.html" onclick="openNav()">Project EVA</a></li>
-						<li><a href="#" onclick="openNav()">Sponsors</a></li>
-						<li><a href="#Contact" onclick="openNav()">Contact</a></li>
-					</ul>
+			<div>
+				<div width="100%" height="auto">
+					<h3 style="font-weight: 500; display:block; margin: 5rem; text-align: center; font-size:50px; color: aliceblue; position: relative;z-index: 1;">PROJECT <span style="font-weight: 700; background: -webkit-linear-gradient(#3d1293, #ed302c);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">EVA</span></h3>
 				</div>
-			</nav>
-		</header>
-
-		<div class="container">
-			<canvas id="c"></canvas>
+				
+				<div  style="display: block; position:relative; color: aliceblue; z-index: 1; overflow: hidden; margin-bottom: 2rem;">
+					<table class="tabel">
+						<tbody>
+							<tr>
+								<td>LENGTH</td>
+								<td>2.3 m</td>
+							</tr>
+							<tr>
+								<td>TUBE EXTERNAL DIAMETER</td>
+								<td>126 mm</td>
+							</tr>
+							<tr>
+								<td>ENGINE LENGTH</td>
+								<td>690 mm</td>
+							</tr>
+							<tr>
+								<td>ENGINE DIAMETER</td>
+								<td>120 mm</td>
+							</tr>
+							<tr>
+								<td>ROCKET MASS WITH FUEL</td>
+								<td>28 kg</td>
+							</tr>
+							<tr>
+								<td>ROCKET MASS WITHOUT FUEL</td>
+								<td>18 kg</td>
+							</tr>
+							<tr>
+								<td>ROCKET ENGINE MODEL</td>
+								<td>CESARONI PRO 98</td>
+							</tr>
+							<tr>
+								<td>ROCKET ENGINE MAXIMUM THRUST</td>
+								<td>2300N</td>
+							</tr>
+							<tr>
+								<td>BURN TIME</td>
+								<td>5.6 s</td>
+							</tr>
+							<tr>
+								<td>TOTAL IMPULSE</td>
+								<td>14900 Ns</td>
+							</tr>
+							</table>
+						</tbody>
+						<p style="font-size: 30px; text-align: center;font-weight: 200;" onclick="nextModel()"> <span style="font-weight: 700;">3D</span> model</p>
+						<div class="container">
+							<canvas id="c"></canvas>
+						</div>
+						
+				</div>
+				
+			</div>
+				
 		</div>
-
-		<div width="100%" height="auto">
-			<h3 style="font-weight: 600; display:block; margin: 5rem; text-align: center; font-size:50px; color: aliceblue; position: absolute;z-index: 1;">PROJECT EVA</h3>
-		</div>
-		<div style="top:170px;display:block; margin: 5rem; text-align: center; color: aliceblue; position: absolute;z-index: 1; overflow: hidden;">
-			<table style="width:100%; height:auto;">
-				<tbody>
-					<tr>
-						<td>LENGTH</td>
-						<td>2.3 m</td>
-					</tr>
-					<tr>
-						<td>TUBE EXTERNAL DIAMETER</td>
-						<td>126 mm</td>
-					</tr>
-					<tr>
-						<td>ENGINE LENGTH</td>
-						<td>690 mm</td>
-					</tr>
-					<tr>
-						<td>ENGINE DIAMETER</td>
-						<td>120 mm</td>
-					</tr>
-					<tr>
-						<td>ROCKET MASS WITH FUEL</td>
-						<td>28 kg</td>
-					</tr>
-					<tr>
-						<td>ROCKET MASS WITHOUT FUEL</td>
-						<td>18 kg</td>
-					</tr>
-					<tr>
-						<td>ROCKET ENGINE MODEL</td>
-						<td>CESARONI PRO 98</td>
-					</tr>
-					<tr>
-						<td>ROCKET ENGINE MAXIMUM THRUST</td>
-						<td>2300N</td>
-					</tr>
-					<tr>
-						<td>BURN TIME</td>
-						<td>5.6 s</td>
-					</tr>
-					<tr>
-						<td>TOTAL IMPULSE</td>
-						<td>14900 Ns</td>
-					</tr>
-					</table>
-				</tbody>
-		</div>
+		
 		
 		
 		<script type="module">
+			
+			let numModele = ["../models/Rampa.glb","../models/racheta3.glb"];
+			var counter=0;
+			function nextModel(){
+				counter++;
+			}
+
 			import * as THREE from 'https://cdn.skypack.dev/three@0.132.2';
 			import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
 			import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader';
@@ -142,7 +168,7 @@
 			// })
 			const canvas = document.querySelector('#c');
   			const renderer = new THREE.WebGLRenderer({canvas:canvas});
-			renderer.setClearColor( 0x16224A );
+			renderer.setClearColor( 0x000000 );
 			document.body.appendChild( renderer.domElement );
 			
 			function resizeRendererToDisplaySize(renderer) {
@@ -168,7 +194,7 @@
 			//scene.add( cube );
 			var racheta;
 			const loader = new GLTFLoader();
-			loader.load( '/models/Rampa.glb', function ( gltfobject ) {
+			loader.load( numModele[counter], function ( gltfobject ) {
 				racheta = gltfobject.scene;
 				racheta.position.y=-5;
 				scene.add( gltfobject.scene );
@@ -223,5 +249,21 @@
 
 			animate();
 		</script>
+		<script>
+			var isclicked=false;
+			function openNav() {
+				isclicked=!isclicked;
+				if(isclicked){
+					document.getElementById("mySidenav").style.width = "350px";
+					document.getElementById("mySidenav").style.opacity = "100%";
+				}
+				else{
+					document.getElementById("mySidenav").style.width = "0px";
+					document.getElementById("mySidenav").style.opacity = "0%";
+				}
+			
+			}
+		</script>
+
 	</body>
 </html>

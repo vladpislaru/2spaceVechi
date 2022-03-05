@@ -5,10 +5,11 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Poppins';
+    overflow-x: hidden;
     
 }
 .wallimg{
-    background-image: url('/images/wallpaper.jpg');
+    background-image: url('../images/wallpaper.jpg');
     /* Full height */
     height: 100%; 
     display: flex;
@@ -112,7 +113,7 @@ header{
     overflow: hidden;
   }
   .stelute{
-    content:url("/images/stelute2.png");
+    content:url("../images/stelute2.png");
     background: repeat;
     display: block; 
     margin-left: auto; 
@@ -138,9 +139,14 @@ header{
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1325px) {
     .stelute{
         display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .logofull{
+        width: 30%;
     }
 }
 
@@ -204,7 +210,8 @@ main {
     }
   }
 h1 {
-    margin: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     font-size: 45px;
     background: -webkit-linear-gradient(#3d1293, #ed302c);
     -webkit-background-clip: text;
