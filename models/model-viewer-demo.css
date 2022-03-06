@@ -27,9 +27,6 @@ body {
     text-align: center;
     margin: 0px 45px;
 }
-.model{
-    margin-left: auto; margin-right: auto;
-}
 /* The right grid contains the model and occupies 50% of the available space */
 model-viewer {
     margin-left: auto; margin-right: auto;

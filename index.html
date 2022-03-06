@@ -5,20 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>2Space</title>
+        <link rel="icon" type="image/x-icon" href="images/simb-neutru-negru2.png">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <div class="wallimg">
-                <img id="logofull" class="logofull scroll" data-rate="-2.5" data-direction="vertical" src="images/logo.png" alt=""></img>
-                <img id="stelute" class="stelute scroll" data-rate="-1.5" data-direction="vertical" src="images/stelute2.png" alt=""></img>
+                <img id="logofull" class="logofull" src="images/logo.png" alt=""></img>
+                <img id="stelute" class="stelute" src="images/stelute2.png" alt=""></img>
         </div>
         
         <div class="wrapper">
             <header>
-                <a href="#"style="display:block; width: 25px; height: 25px;"><img id="logotop" class="logo" src="images/simb-neutru-alb2.png" style="display:block; width: 25px; height: 25px;margin: 10px;" alt=""></img></a>
+                <a href="#" class="logo"><img src="images/simb-neutru-alb2.png" style="width: 25px; height: 25px;" alt=""></img></a>
                 <img class="menu" src="images/menu_white.png" onclick="openNav()" alt=""></img>
                 
                 <nav>
@@ -33,11 +34,11 @@
                     </div>
                 </nav>
             </header>
-            <div style="height:auto;background-color:#ffffff;margin-top: 0px;margin-bottom: 0px;">
+            <div style="z-index: 9; height:auto;background-color:#ffffff;margin-top: 0px;margin-bottom: 0px;">
                 <div class="wrappercuprins">
-                    <h1 id="About" style="text-align: center; padding: 25px;">About Us</h1>
+                    <h1 id="About" style="text-align: center; padding: 25px;">ABOUT US</h1>
                     <div class="video" style="width: 100%; margin-left: auto; margin-right: auto;">
-                        <video poster="images/IMG_9547.jpeg" width="95%" autoplay loop muted style="display: block; margin-left: auto; margin-right: auto; border-radius: 20px;overflow: hidden;-webkit-transform: translateZ(0);box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);">
+                        <video poster="images/IMG_9547.jpeg" width="97%" autoplay loop muted style="display: block; margin-left: auto; margin-right: auto; border-radius: 20px;overflow: hidden;-webkit-transform: translateZ(0);box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);">
                             <source src="images/IMG_9565.mp4" type="video/mp4 codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
                         </video>
                     </div>
@@ -45,12 +46,38 @@
                     <img class="anim" data-delay=".1s" src="images/1200px-Logo_Universitatea_Politehnica_din_Bucuresti.svg.png" alt="" style="display: block;margin-top: 5rem; margin-left: auto; margin-right: auto; width: 250px; height: 250px;">
 
                     <div style="display:block;margin-left: auto; margin-right: auto;width: 100%;">
-                        <p class="anim" data-delay=".1s" style="font-weight: 300;font-size: 20px; text-align: justify; margin: 5rem;">
+                        <p class="anim" data-delay=".1s" style="font-weight: 300;font-size: 20px; text-align: justify; margin: 2rem; margin-bottom: 5rem;">
                             STUDENTS2SPACE is an NGO that wants to provide practical contexts for students passionate about the space industry, especially rockets. 
                             Specifically, this initiative supports volunteers in building and launching various rocket models.
                             STUDENTS2SPACE main activity takes place inside the Research Center CAMPUS within University POLITEHNICA of Bucharest, Romania.
                         </p>
                     </div>
+                    <h3 style="font-weight: 500; display:block;  text-align: center; font-size:50px; color: rgb(0, 0, 0); position: relative;">PROJECT <span style="font-weight: 700; background: -webkit-linear-gradient(45deg,#ff7300, #ffbb00);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">EVA</span></h3>
+                    <div id="model" >
+                        <model-viewer ar camera-controls shadow-intensity="10" src="models/Racheta.glb" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#eb4034" ></model-viewer>
+                    </div>
+                    <h2 style="font-weight: 600; font-size: 40px; text-align: center;">SPONSORS</h2>
+                    <div style="width: 95%; height: auto; margin-top: 3rem; margin-bottom: 3rem; margin-left: auto; margin-right: auto;">
+                        <div class="sponsors">
+                            <div>
+                                <img src="images/vodafone.png" alt="">
+                                <img src="images/campus_logo.png" alt="">   
+                            </div>
+                            <div>
+                                <img src="images/radar_logo.png" alt="">
+                                <img src="images/hyve_logo.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/forgotten_chain_logo.png">
+                            </div>
+                            <div>
+                                <img src="images/pure_quad_logo.png" alt="">
+                                <img src="images/solmag_logo.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
                     <main>
                         <div class="card">
                             <div class="info">
@@ -82,7 +109,7 @@
                         </div>
                     </main>
                     
-                    <div id="EuRoC" style="border-radius: 20px; background-color: #004081; display: flex;margin-top: 10rem;margin-bottom: 10rem; margin-left: auto; margin-right: auto; width: 95%; height: 500px;">
+                    <div id="EuRoC" style="border-radius: 20px; background-color: #004081; display: flex;margin-top: 10rem;margin-bottom: 10rem; margin-left: auto; margin-right: auto; width: 97%; height: 500px;">
                         <img  src="images/logoeuroc_alb.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 250px; height: 250px; overflow: hidden;" alt="">
                     </div>
                     
@@ -93,20 +120,20 @@
                     <div class="euroc" style="display: grid;grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));grid-gap: 10rem;margin-left: auto; margin-right: auto;width: 99%;">
                         <div class="anim" data-delay=".1s">
                             <img src="images/eu.png" style="display: block; width:50px;height:50px; position: relative; margin-left: auto; margin-right: auto;" alt="">
-                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 5rem;">
+                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 2rem;">
                                 EuRoC is the biggest rocketry contest that takes place in the EU and the second largest competition globally. EuRoC seeks to stimulate engineering students to design, build and launch their own vehicles.<a href="https://euroc.pt/">(https://euroc.pt/)</a>
                             </p>
                         </div>
                         <div class="anim" data-delay=".1s">
                             <img src="images/fx.png" style="display: block; width:50px;height:50px; position: relative; margin-left: auto; margin-right: auto;" alt="">
                             <img src="images/electronics-icon-png-27.png" style="display: block; width:50px;height:50px; position: relative; margin-left: auto; margin-right: auto;" alt="">
-                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 5rem;">
+                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 2rem;">
                                 In a broader spectrum the competition aims to encourage students to study science, technology, engineering and math (STEM) and to the development of technological skills.
                             </p>
                         </div>
                         <div class="anim" data-delay=".1s">
                             <img src="images/ro.png" style="display: block; width:50px;height:50px; position: relative; margin-left: auto; margin-right: auto;">
-                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 5rem;">
+                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 2rem;">
                                 Last edition, we were proud to be one of the twenty teams that were selected around the world and the first Romanian team of students & engineers that got accepted. 
                                 This edition, joining EuRoC again will be an amazing opportunity for us to show the world what we managed to develop during the past year!
                             </p>
@@ -114,7 +141,7 @@
                         <div class="anim" data-delay=".1s">
                             <img src="images/racheta_cu_flacara.png" style="display: block; width:100px;height:100px; position: relative; margin-left: auto; margin-right: auto;">
                             
-                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 5rem;">
+                            <p style="font-weight: 300;float:center;font-size: 20px; text-align: justify; margin: 2rem;">
                                 The goal of STUDENTS2SPACE in EuRoC 2022 is to reach 9000m with its own developed rocket. 
                                 Thus, members will gain experience in building the components of the rocket structure and electronics.
                             </p>
@@ -126,13 +153,12 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11395.533201233133!2d26.0437072!3d44.435556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39b9e6d086b107fa!2sCentrul%20CAMPUS!5e0!3m2!1sro!2sro!4v1645142977383!5m2!1sro!2sro" width="50%" height="100%" style=" display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; overflow: hidden; border: 0;" allowfullscreen="" loading="lazy" title="Map"></iframe>
                     <div style="background-color: rgb(14, 14, 14); width: 50%;">
                         <div style="background-color: rgb(14, 14, 14); display: grid; grid-template-columns: repeat(auto-fit, minmax(5rem, 7rem));justify-content: center; grid-gap: 2rem; margin-left: auto; margin-right: auto; height: 500px;">
-                            
                             <a href="https://www.facebook.com/Students2Space/"style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"><img src="images/facebook.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"></a>
                             <a href="https://instagram.com/students2space"style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"><img src="images/instagram.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"></a>
                             <a href="https://www.linkedin.com/company/students2space"style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"><img src="images/linkedin.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
             
         </div>
 
@@ -153,7 +179,9 @@
                 }
             
             }
+        </script>
 
+        <script>
             window.addEventListener('scroll', function(e) {
             
 
@@ -163,21 +191,13 @@
             var index = 0, length = target.length;
             for (index; index < length; index++) {
                 var pos = window.pageYOffset * target[index].dataset.rate;
-
-                if(target[index].dataset.direction === 'vertical') {
-                    target[index].style.transform = 'translate3d(0px,'+pos+'px, 0px)';
-                } else {
-                    var posX = window.pageYOffset * target[index].dataset.ratex;
-                    var posY = window.pageYOffset * target[index].dataset.ratey;
-                    
-                    target[index].style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
-                }
+                target[index].style.transform = 'translate3d(0px,'+pos+'px, 0px)';
             }
-
             
 
             });
         </script>
+
         <script>
                 
         const images = document.querySelectorAll('.anim');
@@ -199,6 +219,10 @@
             observer.observe(image)
         })
         </script>
+        <!-- Loads model-viewer for modern browsers -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <!-- Loads model-viewer for older browsers -->
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   
     </body>
 </html>
