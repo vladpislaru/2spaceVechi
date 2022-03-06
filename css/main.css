@@ -10,7 +10,7 @@ body {
 }
 
 .wallimg {
-  background-image: url("../images/wallpaper.jpg");
+  background-image: url("/images/wallpaper.jpg");
   /* Full height */
   height: 100%;
   display: -webkit-box;
@@ -130,7 +130,7 @@ header {
 }
 
 .stelute {
-  content: url("../images/stelute2.png");
+  content: url("/images/stelute2.png");
   background: repeat;
   display: block;
   margin-left: auto;

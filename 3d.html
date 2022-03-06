@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Project EVA</title>
-		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
@@ -53,17 +53,17 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<a href="../html/index.html"style="display:block; width: 25px; height: 25px;"><img id="logotop" class="logo" src="../images/simb-neutru-alb2.png" style="display:block; width: 25px; height: 25px;margin: 10px;"></img></a>
-				<img class="menu" src="../images/menu_white.png" onclick="openNav()"></img>
+				<a href="index.html"style="display:block; width: 25px; height: 25px;"><img id="logotop" class="logo" src="images/simb-neutru-alb2.png" style="display:block; width: 25px; height: 25px;margin: 10px;"></img></a>
+				<img class="menu" src="images/menu_white.png" onclick="openNav()"></img>
 				
 				<nav>
 					<div id="mySidenav" class="sidenav">
 						<ul>
-							<li><a href="../html/index.html#About" onclick="openNav()">About</a></li>
-							<li><a href="../html/index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
-							<li><a href="../html/3d.html" onclick="openNav()">Project EVA</a></li>
-							<li><a href="../html/index.html#" onclick="openNav()">Sponsors</a></li>
-							<li><a href="../html/index.html#Contact" onclick="openNav()">Contact</a></li>
+							<li><a href="index.html#About" onclick="openNav()">About</a></li>
+							<li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
+							<li><a href="3d.html" onclick="openNav()">Project EVA</a></li>
+							<li><a href="index.html#" onclick="openNav()">Sponsors</a></li>
+							<li><a href="index.html#Contact" onclick="openNav()">Contact</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -138,11 +138,7 @@
 		
 		<script type="module">
 			
-			let numModele = ["../models/Rampa.glb","../models/racheta3.glb"];
-			var counter=0;
-			function nextModel(){
-				counter++;
-			}
+			
 
 			import * as THREE from 'https://cdn.skypack.dev/three@0.132.2';
 			import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
@@ -194,7 +190,7 @@
 			//scene.add( cube );
 			var racheta;
 			const loader = new GLTFLoader();
-			loader.load( numModele[counter], function ( gltfobject ) {
+			loader.load( 'models/Rampa.glb', function ( gltfobject ) {
 				racheta = gltfobject.scene;
 				racheta.position.y=-5;
 				scene.add( gltfobject.scene );
