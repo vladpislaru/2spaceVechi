@@ -164,11 +164,57 @@
 
 
 
-        <script src="javascript/menu_click.js"></script>
+        <script>
+            var isclicked=false;
+            function openNav() {
+                isclicked=!isclicked;
+                if(isclicked){
+                    document.getElementById("mySidenav").style.width = "350px";
+                    document.getElementById("mySidenav").style.opacity = "100%";
+                }
+                else{
+                    document.getElementById("mySidenav").style.width = "0px";
+                    document.getElementById("mySidenav").style.opacity = "0%";
+                }
+            
+            }
+        </script>
 
-        <script src="javascript/scroll_event.js"></script>
+        <script>
+            window.addEventListener('scroll', function(e) {
+                const target = document.querySelectorAll('.scroll');
+            
+            
+                var index = 0, length = target.length;
+                for (index; index < length; index++) {
+                    var pos = window.pageYOffset * target[index].dataset.rate;
+                    target[index].style.transform = 'translate3d(0px,'+pos+'px, 0px)';
+                }
+                
+            
+            });
+        </script>
 
-        <script src="javascript/intersection.js"></script>
+        <script>
+            const images = document.querySelectorAll('.anim');
+
+            observer = new IntersectionObserver((entries) => {
+
+                entries.forEach(entry => {
+                    if(entry.intersectionRatio > 0) {
+                        entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
+                    }
+                    else {
+                        entry.target.style.animation = 'none';
+                    }
+                })
+
+            })
+
+            images.forEach(image => {
+                observer.observe(image)
+            })
+        </script>
 
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 
