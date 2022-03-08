@@ -13,7 +13,7 @@ body {
     /* Full height */
     height: 100%; 
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
     justify-content: center;    
     z-index: 0;
     /* Create the parallax scrolling effect */
@@ -24,7 +24,7 @@ body {
 }
 
 header{
-    overflow: hidden;
+    overflow-x: hidden;
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 14, 14);
@@ -67,6 +67,7 @@ header{
         animation:cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
+
 .logo{
     height: 25px;
     width: 25px;
@@ -104,6 +105,7 @@ header{
     height: 100%;
     display: block;
   }
+  
 .logofull{
     display: block; 
     margin-left: auto; 
@@ -132,6 +134,7 @@ header{
   .wrappercuprins{
     background-color: #ffffff;
   }
+  
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 10px;}
     .sidenav a {font-size: 18px;}
@@ -142,22 +145,42 @@ header{
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 760px) {
     .stelute{
-        display: none;
+        content:url("/images/stelute_mobil.png");
+        width: 100%;
+        height: auto;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .logofull{
         width: 30%;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .sponsors{
-        flex-direction: column;
+.sponsorlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .sponsorimg{
+        transition: 0.3s;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        &:hover {
+            -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
     }
-    
+}
+@media screen and (max-width: 450px) {
+    .sponsorlogo{
+        flex-direction: column;
+        .sponsorimg{
+            -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
+    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -166,6 +189,7 @@ header{
     }
   }
 
+  
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -242,24 +266,4 @@ model-viewer {
     height: 500px;
     outline: none;
 }
-.sponsors{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        transition: 0.5s;
-        &:hover {
-            -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-            transition: 0.5s;
-        }
-        
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 2rem;
-    }
-}
-  
+

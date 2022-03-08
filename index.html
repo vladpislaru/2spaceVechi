@@ -52,31 +52,62 @@
                             STUDENTS2SPACE main activity takes place inside the Research Center CAMPUS within University POLITEHNICA of Bucharest, Romania.
                         </p>
                     </div>
-                    <h3 style="font-weight: 500; display:block;  text-align: center; font-size:50px; color: rgb(0, 0, 0); position: relative;">PROJECT <span style="font-weight: 700; background: -webkit-linear-gradient(45deg,#ff7300, #ffbb00);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">EVA</span></h3>
+                    <h3 style="font-weight: 500; display:block;  text-align: center; font-size:50px; color: rgb(0, 0, 0); position: relative;">
+                        PROJECT <span style="font-weight: 700; background: -webkit-linear-gradient(45deg,#ff7300, #ffbb00);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">EVA</span>
+                    </h3>
                     <div id="Sponsors">
-                        <model-viewer ar camera-controls shadow-intensity="10" src="models/Racheta.glb" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#eb4034" ></model-viewer>
+                        <model-viewer camera-orbit="0deg 95deg" id="sphere" camera-controls interaction-prompt-threshold="100" bounds="tight" src="models/Racheta.glb" ar ar-placement="floor" ar-scale="fixed" ar-modes="webxr scene-viewer quick-look" alt="A 3D model of a sphere" xr-environment>
+                            <div class="controls" style="display: none;">
+                                <span id="metalness-value"></span>
+                                <span id="roughness-value"></span>
+                            </div>
+                        </model-viewer>
+                        <script>
+                            const modelViewerParameters = document.querySelector("model-viewer#sphere");
+                            
+                            modelViewerParameters.addEventListener("load", (ev) => {
+                            
+                                let material = modelViewerParameters.model.materials[0];
+                            
+                                let metalnessDisplay = document.querySelector("#metalness-value");
+                                let roughnessDisplay = document.querySelector("#roughness-value");
+                            
+                                metalnessDisplay.textContent = material.pbrMetallicRoughness.metallicFactor;
+                                roughnessDisplay.textContent = material.pbrMetallicRoughness.roughnessFactor;
+                            
+                                
+                                material.pbrMetallicRoughness.setBaseColorFactor([0.5, 0.5, 0.5]);
+                            
+                                material.pbrMetallicRoughness.setMetallicFactor(1);
+                            
+                                material.pbrMetallicRoughness.setRoughnessFactor(0.3);
+                            })
+                        </script>
                     </div>
                     <h2 style="font-weight: 600; font-size: 40px; text-align: center;">SPONSORS</h2>
-                    <div style="width: 95%; height: auto; margin-top: 3rem; margin-bottom: 3rem; margin-left: auto; margin-right: auto;">
-                        <div class="sponsors">
-                            <div>
-                                <img src="images/vodafone.png" style="width: 120px; height: 120px;" alt="">
-                                <img src="images/campus_logo.png" alt="">   
-                            </div>
-                            <div>
-                                <img src="images/radar_logo.png" style="width: 150px; height: 150px;" alt="">
-                                <img src="images/hyve_logo.png" style="width: 160px; height: 160px;" alt="">
-                            </div>
-                            <div>
-                                <img src="images/forgotten_chain_logo.png" style="width: 80px; height: 80px;" alt="">
-                            </div>
-                            <div>
-                                <img src="images/pure_quad_logo.png" style="width: 90px; height: 90px;" alt="">
-                                <img src="images/solmag_logo.png" style="width: 90px; height: 90px;" alt="">
+                        <div style="display: flex; flex-direction: column;  align-items: center; justify-content: center;">
+                            <div class="sponsorlogo">
+                                <img class="sponsorimg" src="images/vodafone.png" style="width: 130px; height: 130px;" alt="">
+                                <img class="sponsorimg" src="images/hyve_logo.png" style="width: 160px; height: 160px;" alt="">
+                                <img class="sponsorimg" src="images/forgotten_chain_logo2.png" style="width: 140px; height: 140px;" alt="">   
                             </div>
                             
+                            <div class="sponsorlogo">
+                                <img class="sponsorimg" src="images/radar_logo.png" style="width: 150px; height: 150px;" alt="">
+                                <img class="sponsorimg" src="images/campus_logo.png" style="width: 130px; height: 130px;" alt="">
+                            </div>
+                            
+                            <div class="sponsorlogo">
+                                <img class="sponsorimg" src="images/pure_quad_logo.png" style="width: 80px; height: 80px;" alt="">
+                                <img class="sponsorimg" src="images/solmag_logo.png" style="width: 80px; height: 80px;" alt="">
+                            </div>
                         </div>
-                    </div>
+
+                    <p class="anim" data-delay=".1s" style="font-weight: 300;font-size: 20px; text-align: justify; margin: 2rem; margin-bottom: 5rem;">
+                        We are constantly seeking cooperations with companies in the tech sector to provide support and advance our projects. 
+                        A sponsorship can be technical, educational (supplying know-how) or financial.
+                        If you are interested in a sponsorship, a collaboration or more information on STUDENTS2SPACE Team, feel free to <a href="index.html#Contact">contact us</a>.
+                    </p>
                     
                     <main>
                         <div class="card">
@@ -109,8 +140,14 @@
                         </div>
                     </main>
                     
-                    <div id="EuRoC" style="border-radius: 20px; background-color: #004081; display: flex;margin-top: 10rem;margin-bottom: 10rem; margin-left: auto; margin-right: auto; width: 97%; height: 500px;">
-                        <img  src="images/logoeuroc_alb.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 250px; height: 250px; overflow: hidden;" alt="">
+                    <div id="EuRoC" style="border-radius: 20px; background-color: #004081; display: flex; justify-content: center; align-items: center; margin-top: 10rem;margin-bottom: 10rem; margin-left: auto; margin-right: auto; width: 97%; height: 500px; overflow: hidden;">
+                        <img  src="images/logoeuroc_alb.png" style="width: 50%; display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; width: 250px; height: 250px; overflow: hidden;" alt="">
+                        <div style="width: 25%; display: flex; flex-wrap: wrap; justify-content: space-evenly; flex-direction: row; margin-right: auto;">
+                            <p style=" text-align: center; color: aliceblue; font-weight: 700; font-size: 30px;">2022 <span style="font-weight: 200;">EDITION</span></p>
+                            <p style=" text-align: center; color: aliceblue; font-weight: 400; font-size: 25px;">11-18 <span style="font-weight: 400;">OCTOBER</span></p>
+                            <p style=" text-align: center;color: aliceblue; font-weight: 600; font-size: 25px;">PONTE DE SOR</p>
+                            <img src="images/portugal_flag.png" alt="" style="margin-top: auto; margin-bottom: auto; width:40px;height:40px;" >
+                        </div>
                     </div>
                     
                 </div>
@@ -153,9 +190,21 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11395.533201233133!2d26.0437072!3d44.435556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39b9e6d086b107fa!2sCentrul%20CAMPUS!5e0!3m2!1sro!2sro!4v1645142977383!5m2!1sro!2sro" width="50%" height="100%" style=" display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; overflow: hidden; border: 0;" allowfullscreen="" loading="lazy" title="Map"></iframe>
                     <div style="background-color: rgb(14, 14, 14); width: 50%;">
                         <div style="background-color: rgb(14, 14, 14); display: grid; grid-template-columns: repeat(auto-fit, minmax(5rem, 7rem));justify-content: center; grid-gap: 2rem; margin-left: auto; margin-right: auto; height: 500px;">
-                            <a href="https://www.facebook.com/Students2Space/"style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"><img src="images/facebook.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"></a>
-                            <a href="https://instagram.com/students2space"style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"><img src="images/instagram.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"></a>
-                            <a href="https://www.linkedin.com/company/students2space"style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"><img src="images/linkedin.png" style="display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px; overflow: hidden;"></a>
+                            <a href="https://www.facebook.com/Students2Space/"style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                <img src="images/facebook.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                            </a>
+                            <a href="https://instagram.com/students2space"style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                <img src="images/instagram.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                            </a>
+                            <a href="https://www.linkedin.com/company/students2space"style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                <img src="images/linkedin.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                            </a>
+                            <a href="mailto: contact@students.2space.ro" style=" margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;"> 
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                                    <img src="images/mail.png" alt="" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                    <span style="color: white; text-decoration: none; font-size: 10px;">contact@students.2space.ro</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

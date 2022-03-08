@@ -16,7 +16,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -177,9 +177,11 @@ header {
   }
 }
 
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 760px) {
   .stelute {
-    display: none;
+    content: url("/images/stelute_mobil.png");
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -189,12 +191,47 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .sponsors {
+.sponsorlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sponsorlogo .sponsorimg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.sponsorlogo .sponsorimg:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+@media screen and (max-width: 450px) {
+  .sponsorlogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .sponsorlogo .sponsorimg {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
   }
 }
 
@@ -299,35 +336,5 @@ model-viewer {
   margin-right: auto;
   height: 500px;
   outline: none;
-}
-
-.sponsors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.sponsors img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 2rem;
-}
-
-.sponsors img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
