@@ -11,7 +11,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     </head>
-    <body>
+    <body onload="loadedpage()">
+        <div id="loading_background" style="background-color: #ffffff; width: 100%; height: 100%; position: fixed; z-index: 999; filter: invert(1);">
+            <img src="images/simb-neutru-alb2.png" style="display: block; position: fixed; filter: invert(1); width: 60px; height: 60px;left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; " alt="">
+            </div> <div id="loading">
+        </div>
+        
         <div class="wallimg">
                 <img id="logofull" class="logofull" src="images/logo.png" alt=""></img>
                 <img id="stelute" class="stelute" src="images/stelute2.png" alt=""></img>
@@ -56,7 +61,7 @@
                         PROJECT <span style="font-weight: 700; background: -webkit-linear-gradient(45deg,#ff7300, #ffbb00);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">EVA</span>
                     </h3>
                     <div id="Sponsors">
-                        <model-viewer camera-orbit="0deg 95deg" id="sphere" camera-controls interaction-prompt-threshold="100" bounds="tight" src="models/Racheta.glb" ar ar-placement="floor" ar-scale="fixed" ar-modes="webxr scene-viewer quick-look" alt="A 3D model of a sphere" xr-environment>
+                        <model-viewer camera-orbit="0deg 95deg" id="sphere" camera-controls interaction-prompt-threshold="50" bounds="tight" src="models/Racheta.glb" ar ar-placement="floor" ar-scale="fixed" ar-modes="webxr scene-viewer quick-look" alt="A 3D model of a sphere">
                             <div class="controls" style="display: none;">
                                 <span id="metalness-value"></span>
                                 <span id="roughness-value"></span>
@@ -87,26 +92,28 @@
                     <h2 style="font-weight: 600; font-size: 40px; text-align: center;">SPONSORS</h2>
                         <div style="display: flex; flex-direction: column;  align-items: center; justify-content: center;">
                             <div class="sponsorlogo">
-                                <img class="sponsorimg" src="images/vodafone.png" style="width: 130px; height: 130px;" alt="">
-                                <img class="sponsorimg" src="images/hyve_logo.png" style="width: 160px; height: 160px;" alt="">
-                                <img class="sponsorimg" src="images/forgotten_chain_logo2.png" style="width: 140px; height: 140px;" alt="">   
+                                <img class="sponsorimg" src="images/vodafone_logo_hires.png" alt="">
+                                <img class="sponsorimg" src="images/hyve_logo_hires.png" alt="">
+                                <img class="sponsorimg" src="images/forgottenchain_hires.png" alt="">   
                             </div>
                             
                             <div class="sponsorlogo">
-                                <img class="sponsorimg" src="images/radar_logo.png" style="width: 150px; height: 150px;" alt="">
-                                <img class="sponsorimg" src="images/campus_logo.png" style="width: 130px; height: 130px;" alt="">
+                                <img class="sponsorimg" src="images/radar_logo_hires_inline.png" alt="">
+                                <img class="sponsorimg" src="images/campus_logo_hires.png" alt="">
+                                <img class="sponsorimg" src="images/FIA_logo_hires.png" alt="">
+                                <img class="sponsorimg" src="images/upb_logo_200_hires.png" alt="">
                             </div>
                             
                             <div class="sponsorlogo">
-                                <img class="sponsorimg" src="images/pure_quad_logo.png" style="width: 80px; height: 80px;" alt="">
-                                <img class="sponsorimg" src="images/solmag_logo.png" style="width: 80px; height: 80px;" alt="">
+                                <img class="sponsorimg" src="images/purequad_logo_hires.png" alt="">
+                                <img class="sponsorimg" src="images/solmag_logo_notsohires.png" alt="">
                             </div>
                         </div>
 
                     <p class="anim" data-delay=".1s" style="font-weight: 300;font-size: 20px; text-align: justify; margin: 2rem; margin-bottom: 5rem;">
                         We are constantly seeking cooperations with companies in the tech sector to provide support and advance our projects. 
                         A sponsorship can be technical, educational (supplying know-how) or financial.
-                        If you are interested in a sponsorship, a collaboration or more information on STUDENTS2SPACE Team, feel free to <a href="index.html#Contact">contact us</a>.
+                        If you are interested in a sponsorship, a collaboration or more information on STUDENTS 2SPACE Team, feel free to <a href="index.html#Contact">contact us</a>.
                     </p>
                     
                     <main>
@@ -268,6 +275,14 @@
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 
         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-  
+        
+        <script>
+            var load = document.getElementById("loading");
+            var loadbg = document.getElementById("loading_background");
+            function loadedpage(){
+                load.style.display = 'none';
+                loadbg.style.display = 'none';
+            }
+        </script>
     </body>
 </html>

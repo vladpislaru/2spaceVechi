@@ -208,6 +208,8 @@ header {
 }
 
 .sponsorlogo .sponsorimg {
+  width: 135px;
+  height: 135px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-filter: grayscale(100%);
@@ -221,7 +223,7 @@ header {
   filter: grayscale(0%);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .sponsorlogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -336,5 +338,44 @@ model-viewer {
   margin-right: auto;
   height: 500px;
   outline: none;
+}
+
+#loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 145px;
+  height: 145px;
+  margin: -76px 0 0 -76px;
+  border: 5px solid #000000;
+  border-radius: 50%;
+  border-top: 5px solid #ed302c;
+  border-bottom: 5px solid #3d1393;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 999;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
