@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2Space</title>
+        <link rel="icon" type="image/x-icon" href="images/simb-neutru-negru2.png">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <style>
+			body { 
+				margin: 0;
+				font-family: 'Poppins';
+				background-color: rgb(255, 255, 255);
+			}
+        </style>
+    </head>
+<body onload="loadedpage()">
+    <div id="loading_background" style="background-color: #ffffff; width: 100%; height: 100%; position: fixed; z-index: 999; filter: invert(1);">
+        <img src="images/simb-neutru-alb2.png" style="display: block; position: fixed; filter: invert(1); width: 60px; height: 60px;left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; " alt="">
+        </div> <div id="loading">
+    </div>
+        <div class="wrapper">
+            <header>
+                <a href="index.html" class="logo"><img src="images/simb-neutru-alb2.png" style="width: 25px; height: 25px;" alt=""></img></a>
+                <img class="menu" src="images/menu_white.png" onclick="openNav()" alt=""></img>
+                
+                <nav>
+                    <div id="mySidenav" class="sidenav">
+                        <ul>
+                            <li><a href="index.html#About" onclick="openNav()">About</a></li>
+                            <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
+                            <li><a href="3d.html" onclick="openNav()">Project EVA</a></li>
+                            <li><a href="index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                            <li><a href="index.html#Contact" onclick="openNav()">Contact</a></li>
+                            <li><a href="sponsors.html" onclick="openNav()">Support Us</a></li>
+                            <li><a href="join.html" onclick="openNav()">Join Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            
+            <div class="wrappercuprins" style="background-color: rgb(255, 255, 255);padding-top: 50px;">
+                <img src="images/Vizual_2.jpg" style="display: block; width: 50%; margin-bottom: 2rem; margin-left: auto; margin-right: auto; border-radius: 20px;" alt="">
+                <button class="f230ro-lansare">Redirecționează</button>
+                <script src="https://formular230.ro/share/237ec12bc6"></script>
+                    <div style="display:block;margin-left: auto; margin-right: auto;width: 90%;">
+                        <p data-delay=".1s" style="font-weight: 400;font-size: 20px; text-align: center; margin: 2rem; margin-bottom: 0rem; color: rgb(0, 0, 0);">
+                            Până pe 25 mai poți contribui la dezvoltarea mediului științific din România, susținând domeniul aerospațial. 
+                            Redirecționează simplu, de acasă, 3,5% din impozitul tău pe venit către 2SPACE, completând declarația 230!
+                        </p>
+                        <p data-delay=".1s" style="font-weight: 700;font-size: 20px; text-align: center; margin: 2rem; margin-bottom: 0rem; color: rgb(0, 0, 0);">
+                            https://formular230.ro/asociatia-2space
+                        </p>
+                        <p data-delay=".1s" style="font-weight: 400;font-size: 20px; text-align: center; margin: 2rem; margin-bottom: 0rem; color: rgb(0, 0, 0);">
+                            Ce poți face după generarea PDF-ului?
+                            - să îl depui fizic la sediul ANAF;
+                            - să îl trimiți către noi prin email și ne ocupăm să îl depunem: contact@students.2space.ro
+                        </p>
+                        <p data-delay=".1s" style="font-weight: 700;font-size: 20px; text-align: center; margin: 2rem; margin-bottom: 0rem; color: rgb(0, 0, 0);">
+                            Este dreptul tău să te implici în comunitate!
+                        </p>
+            </div>
+            
+        </div>
+        <script>
+            var isclicked=false;
+            function openNav() {
+                isclicked=!isclicked;
+                if(isclicked){
+                    document.getElementById("mySidenav").style.width = "350px";
+                    document.getElementById("mySidenav").style.opacity = "100%";
+                }
+                else{
+                    document.getElementById("mySidenav").style.width = "0px";
+                    document.getElementById("mySidenav").style.opacity = "0%";
+                }
+            
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <script>
+            var load = document.getElementById("loading");
+            var loadbg = document.getElementById("loading_background");
+            function loadedpage(){
+                load.style.display = 'none';
+                loadbg.style.display = 'none';
+            }
+        </script>
+</body>
+</html>

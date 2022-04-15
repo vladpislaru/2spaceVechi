@@ -119,7 +119,7 @@ header{
     overflow: hidden;
   }
   .stelute{
-    content:url("/images/stelute2.png");
+    content:url("/images/stelute4.png");
     display: block; 
     margin-left: auto; 
     margin-right: auto;
@@ -216,8 +216,7 @@ main {
         } 
 
         .info {
-            padding: 10rem;
-            display: none;
+            
         }
     
         img {
@@ -267,6 +266,39 @@ model-viewer {
     margin-right: auto;
     height: 500px;
     outline: none;
+}
+.amodel{
+    margin-left: auto; margin-right: auto;
+    background-color: #ffffff;
+    // background: -webkit-linear-gradient(45deg,#ff7300, #ffc400);
+    border-radius: 20px; 
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    outline: none;
+}
+.f230ro-lansare{
+    
+    background-color: #000000;
+    border: #ffffff;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.5s;
+    &:hover{
+        background-color: #3d1293;
+        transition: 0.5s;
+    }
 }
 #loading {
     position: fixed;

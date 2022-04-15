@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2Space</title>
+        <link rel="icon" type="image/x-icon" href="images/simb-neutru-negru2.png">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    </head>
+<body onload="loadedpage()">
+        <div id="loading_background" style="background-color: #ffffff; width: 100%; height: 100%; position: fixed; z-index: 999; filter: invert(1);">
+            <img src="images/simb-neutru-alb2.png" style="display: block; position: fixed; filter: invert(1); width: 60px; height: 60px;left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; " alt="">
+            </div> <div id="loading">
+        </div>
+        <div class="wrapper">
+            <header>
+                <a href="index.html" class="logo"><img src="images/simb-neutru-alb2.png" style="width: 25px; height: 25px;" alt=""></img></a>
+                <img class="menu" src="images/menu_white.png" onclick="openNav()" alt=""></img>
+                
+                <nav>
+                    <div id="mySidenav" class="sidenav">
+                        <ul>
+                            <li><a href="index.html#About" onclick="openNav()">About</a></li>
+                            <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
+                            <li><a href="3d.html" onclick="openNav()">Project EVA</a></li>
+                            <li><a href="index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                            <li><a href="index.html#Contact" onclick="openNav()">Contact</a></li>
+                            <li><a href="sponsors.html" onclick="openNav()">Support Us</a></li>
+                            <li><a href="join.html" onclick="openNav()">Join Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="wrappercuprins" style="padding-top: 50px;">
+            <h3 style="font-weight: 500; display:block;  text-align: center; font-size:50px; color: rgb(0, 0, 0); position: relative;">
+                <span style="font-weight: 700; background: -webkit-linear-gradient(45deg,#ff7300, #ffbb00);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">JOIN US</span>
+            </h3>
+            <p style="text-align: center;">Choose which position fits you</p>
+            <main>
+                <div class="card">
+                    <div class="info" style="display:none;">
+                        <strong class="title">Job Title</strong>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur sapiente ipsam nihil velit quae ab unde quasi exercitationem esse</p>        
+                    </div>
+                    <a href="https://forms.gle/D51obmDCuytHsKB47?fbclid=IwAR0jclppq9y-8IEeJ0cwT5SGLk4FiKDEog-rAdIG29hpq2vXwS8GIyPaXF0"><img src="images/WhatsApp Image 2022-04-16 at 02.08.35.jpeg"></a>
+                </div>
+                <div class="card">
+                    <div class="info" style="display:none;">
+                        <strong class="title">Job Title</strong>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur sapiente ipsam nihil velit quae ab unde quasi exercitationem esse</p>        
+                    </div>
+                    <a href="https://forms.gle/D51obmDCuytHsKB47?fbclid=IwAR0jclppq9y-8IEeJ0cwT5SGLk4FiKDEog-rAdIG29hpq2vXwS8GIyPaXF0"><img src="images/WhatsApp Image 2022-04-16 at 02.08.342.jpeg"></a>
+                </div>
+                <div class="card">
+                    <div class="info" style="display:none;">
+                        <strong class="title">Job Title</strong>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur sapiente ipsam nihil velit quae ab unde quasi exercitationem esse</p>        
+                    </div>
+                    <a href="https://forms.gle/D51obmDCuytHsKB47?fbclid=IwAR0jclppq9y-8IEeJ0cwT5SGLk4FiKDEog-rAdIG29hpq2vXwS8GIyPaXF0"><img src="images/WhatsApp Image 2022-04-16 at 02.08.353.jpeg"></a> 
+                </div>
+                <div class="card">
+                    <div class="info" style="display:none;">
+                        <strong class="title">Job Title</strong>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur sapiente ipsam nihil velit quae ab unde quasi exercitationem esse</p>        
+                    </div>
+                    <a href="https://forms.gle/D51obmDCuytHsKB47?fbclid=IwAR0jclppq9y-8IEeJ0cwT5SGLk4FiKDEog-rAdIG29hpq2vXwS8GIyPaXF0"><img src="images/WhatsApp Image 2022-04-16 at 02.08.354.jpeg"></a>
+                </div>
+                
+            </main>
+        </div>
+        
+        <script>
+            var isclicked=false;
+            function openNav() {
+                isclicked=!isclicked;
+                if(isclicked){
+                    document.getElementById("mySidenav").style.width = "350px";
+                    document.getElementById("mySidenav").style.opacity = "100%";
+                }
+                else{
+                    document.getElementById("mySidenav").style.width = "0px";
+                    document.getElementById("mySidenav").style.opacity = "0%";
+                }
+            
+            }
+        </script>
+        <script>
+            var load = document.getElementById("loading");
+            var loadbg = document.getElementById("loading_background");
+            function loadedpage(){
+                load.style.display = 'none';
+                loadbg.style.display = 'none';
+            }
+        </script>
+</body>
+</html>
