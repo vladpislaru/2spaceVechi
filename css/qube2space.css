@@ -158,6 +158,8 @@ main {
     text-align: center;
     margin: auto;
 }
+
+
 /* 
 .jury-image {
     width:40vw;
@@ -256,7 +258,6 @@ main {
     font-size: 14px;
     line-height: 1.4;
     text-align: left;
-
 }
 
 .jury-image {
@@ -280,7 +281,6 @@ p.jury-name {
     font-size: 50px;
     padding-top: 5vh;
     padding-bottom: 2vh;
-
 }
 
 .partners-column {
