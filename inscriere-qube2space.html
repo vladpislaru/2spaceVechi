@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <link rel="icon" type="image/x-icon" href="images/simb-neutru-negru2.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body onload="loadedpage()">
+        <div class="wrapper">
+            <header>
+                <a href="index.html" class="logo"><img src="images/simb-neutru-alb2.png" style="width: 25px; height: 25px;" alt=""></img></a>
+                <img class="menu" src="images/menu_white.png" onclick="openNav()" alt=""></img>
+                
+                <nav>
+                    <div id="mySidenav" class="sidenav">
+                        <ul>
+                            <li><a href="index.html#About" onclick="openNav()">About</a></li>
+                            <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
+                            <li><a href="qube2space.html" onclick="openNav()">QUBE2SPACE</a></li>
+                            <li><a href="3d.html" onclick="openNav()">Project EVA</a></li>
+                            <li><a href="index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                            <li><a href="index.html#Contact" onclick="openNav()">Contact</a></li>
+                            <li><a href="sponsors.html" onclick="openNav()">Support Us</a></li>
+                            <li><a href="join.html" onclick="openNav()">Join Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="wrappercuprins">
+                <form action="https://getform.io/f/5e5ef60b-0dab-4e9d-b338-d4b9d6f6f355" method="POST" enctype="multipart/form-data" style="text-align: center;">
+                    <h3 style="text-align: center; font-size: 40px; font-weight: 700; background: -webkit-linear-gradient(45deg,#6200ff, #ff1500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">FORMULAR INSCRIERE</h3>
+                    <h2>Nume echipa</h2>
+                    <div class="form__group field">
+                        <input type="text" class="form__field" placeholder="Nume echipa*" name="nume echipa" id='name' required>
+                        <label for="name" class="form__label">Nume echipa*</label>
+                    </div>
+                    <h2>Team Leader</h2>
+                    <div style="display: flex; flex-direction:column; margin-left: auto; margin-right: auto;">
+                        <div class="form__group field">
+                            <input type="text" class="form__field" required name="nume team leader" placeholder="Nume Prenume*">
+                            <label for="name" class="form__label">Nume Prenume*</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="tel" class="form__field" required name="nr team leader" placeholder="Numar de telefon*" pattern="07[0-9]{8}">
+                            <label for="name" class="form__label">Numar de telefon*</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="email" class="form__field" required name="email team leader" placeholder="E-mail*">
+                            <label for="name" class="form__label">E-mail*</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" class="form__field" required name="clasa team leader" placeholder="Clasa, Profil*">
+                            <label for="name" class="form__label">Clasa, Profil*</label>
+                        </div>
+                    </div>
+                    <h2>Profesor coordonator</h2>
+                    <div style="display: flex; flex-direction:column; margin-left: auto; margin-right: auto;">
+                        <div class="form__group field">
+                            <input type="text" class="form__field" name="nume profesor" placeholder="Nume Prenume">
+                            <label for="name" class="form__label">Nume Prenume</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="tel" class="form__field" name="nr profesor" placeholder="Numar de telefon" pattern="07[0-9]{8}">
+                            <label for="name" class="form__label">Numar de telefon</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="email" class="form__field" name="email profesor" placeholder="E-mail">
+                            <label for="name" class="form__label">E-mail</label>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <h2>Membri echipa</h2>
+                    <div id="echipa" style="display: flex; flex-direction:column; margin-left: auto; margin-right: auto;">
+                        
+                        <div class="form__group field">
+                            <input type="text" class="form__field" required name="nume membru 1" placeholder="Nume Prenume 1*">
+                            <label for="name" class="form__label">Nume Prenume 1*</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" class="form__field" required name="clasa membru 1" placeholder="Clasa, Profil 1*">
+                            <label for="name" class="form__label">Clasa, Profil 1*</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" class="form__field" required name="nume membru 2" placeholder="Nume Prenume 2*">
+                            <label for="name" class="form__label">Nume Prenume 1*</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" class="form__field" required name="clasa membru 2" placeholder="Clasa, Profil 2*">
+                            <label for="name" class="form__label">Clasa, Profil 2*</label>
+                        </div>
+                    </div>
+                    <p id="addmember" onclick="addMember()" style="cursor: pointer;"><span style=" font-size: 20px; font-weight: 700; background: -webkit-linear-gradient(45deg,#6200ff, #ff1500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">+</span> Add member</p>
+                    <h2>Motivatie</h2>
+                    <h5>Ce vă motivează să participați la acest concurs?*</h5>
+                    <br>
+                    <div class="form__group field">
+                        <textarea required type="text" class="form__field" name="motivatie" placeholder="Ce vă motivează să participați la acest concurs?*" style="resize: none; height:100px"></textarea>
+                        <label for="name" class="form__label">Ce vă motivează să participați la acest concurs?*</label>
+                    </div>
+                    <br>
+                    <h2>Documente</h2>
+                    <h5>Atașați un document PDF care să includă: adeverința de elev eliberată de secretariatul unității de învățământ pentru toți membrii echipei (dacă membrii din componența echipei sunt din unități diferite de învățământ, atunci va fi necesară adeverința de elev de la fiecare unitate de apartenență) SAU carnetele de note ale fiecarui membru, astfel încât să fie vizibilă viza, poza și datele elevului.</h5>
+                    <div style="display: flex; flex-direction:column; margin-left: auto; margin-right: auto;">
+                        <input required type="file" name="file" accept="application/pdf" style="margin-left: auto; margin-right: auto; margin-bottom: 1rem;">
+                        <div>
+                            <input type="checkbox" id="acord" required name="acord">
+                            <label for="acord">Sunt de acord cu regulamentul concursului</label>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <input type="checkbox" id="acordgdpr" required name="acordgdpr">
+                            <label for="acordgdpr">Sunt de acord cu prelucrarea datelor personale</label>
+                        </div>
+                        <button class="submit" type="submit" style="margin-bottom: 1rem;">Send</button>
+                    </div>
+                    
+                 </form>
+            </div>
+        </div>
+        <script>
+            var countmembri = 2;
+            function addMember(){
+                if(countmembri!=7){
+                    countmembri++;
+                    let nume = document.createElement("div");
+                    let clasa = document.createElement("div");
+                    nume.className="form__group field";
+                    clasa.className="form__group field";
+                    nume.innerHTML=`<input type="text" class="form__field" name="nume membru ${countmembri}" placeholder="Nume Prenume ${countmembri}"> <label for="name" class="form__label">Nume Prenume ${countmembri}</label> `;
+                    clasa.innerHTML=`<input type="text" class="form__field" name="clasa membru ${countmembri}" placeholder="Clasa, Profil ${countmembri}"> <label for="name" class="form__label">Clasa, Profil ${countmembri}</label>`;
+                    document.getElementById("echipa").appendChild(nume);
+                    document.getElementById("echipa").appendChild(clasa);
+                    if(countmembri==7){
+                        document.getElementById("addmember").style="display:none";
+                    }
+                }
+                
+            }
+            
+        </script>
+        <script>
+            var isclicked=false;
+            function openNav() {
+                isclicked=!isclicked;
+                if(isclicked){
+                    document.getElementById("mySidenav").style.width = "350px";
+                    document.getElementById("mySidenav").style.opacity = "100%";
+                }
+                else{
+                    document.getElementById("mySidenav").style.width = "0px";
+                    document.getElementById("mySidenav").style.opacity = "0%";
+                }
+            
+            }
+        </script>
+        <script>
+            var load = document.getElementById("loading");
+            var loadbg = document.getElementById("loading_background");
+            function loadedpage(){
+                load.style.display = 'none';
+                loadbg.style.display = 'none';
+            }
+        </script>
+</body>
+</html>

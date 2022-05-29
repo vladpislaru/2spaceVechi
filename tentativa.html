@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2Space</title>
+        <link rel="icon" type="image/x-icon" href="images/simb-neutru-negru2.png">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/qube2space.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    </head>
+<body onload="loadedpage()">
+        <div id="loading_background" style="background-color: #ffffff; width: 100%; height: 100%; position: fixed; z-index: 999; filter: invert(1);">
+            <img src="images/simb-neutru-alb2.png" style="display: block; position: fixed; filter: invert(1); width: 60px; height: 60px;left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; " alt="">
+            </div> <div id="loading">
+        </div>
+        <div class="wrapper">
+            <header>
+                <a href="index.html" class="logo"><img src="images/simb-neutru-alb2.png" style="width: 25px; height: 25px;" alt=""></img></a>
+                <img class="menu" src="images/menu_white.png" onclick="openNav()" alt=""></img>
+                
+                <nav>
+                    <div id="mySidenav" class="sidenav">
+                        <ul>
+                            <li><a href="index.html#About" onclick="openNav()">About</a></li>
+                            <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li>
+                            <li><a href="qube2space.html" onclick="openNav()">QUBE2SPACE</a></li>
+                            <li><a href="3d.html" onclick="openNav()">Project EVA</a></li>
+                            <li><a href="index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                            <li><a href="index.html#Contact" onclick="openNav()">Contact</a></li>
+                            <li><a href="sponsors.html" onclick="openNav()">Support Us</a></li>
+                            <li><a href="join.html" onclick="openNav()">Join Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+             <main>
+        </div>
+        <div class="wrappercuprins" style="padding-top: 50px;">
+            <h3 style="font-weight: 500; display:block;  text-align: center; font-size:50px; color: rgb(0, 0, 0); position: relative;">
+                <span style="font-weight: 700; background: -webkit-linear-gradient(45deg,#ff7300, #ffbb00);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">QUBE2SPACE</span>
+            </h3>
+            <div style="text-align: center;" class="home">
+            <div class="introduction">
+                <h class="intro-text">Echipa 2SPACE, înființată în 2019, este singura echipă de studenți din România care
+                    proiectează și lansează rachete, în special pentru competițiile internaționalede studenți.
+                    Inovația și tehnologia se îmbină în dezvoltarea proiectelor actuale și viitoare care vor
+                    duce echipa la nivelul următor, iar scopul nostru este să ne atingem obiectivele și să
+                    dezvoltăm cât mai multe concepte noi în mediul universitar. Ne dorim să ne implicam cât
+                    mai mult în dezvoltarea domeniului și atragerea atât a studenților, cât și a elevilor spre
+                    această latură a științei.
+                    Alături de Universitatea POLITEHNICA din București, vrem să implementăm prima
+                    competiție de PocketQube-uri din lume, dorind să atragem cât mai mulți elevi către
+                    această ramură impresionantă și fascinantă a științei.
+                    Universitatea POLITEHNICA din București - UPB (www.upb.ro) este cea mai mare și
+                    cea mai veche universitate tehnică din țară și printre universitățile cele mai prestigioase
+                    din România.
+                    Tradiția instituției, dezvoltată în 200 de ani, este conservată printr-un proces continuu de
+                    modernizare.
+                    Misiunea Universității POLITEHNICA din București a fost gândită ca o combinație între
+                    educație, cercetare și inovare, ce reprezintă cheia spre o societate și economie bazată
+                    pe cunoaștere.</h>
+                    <img src="pocketqube-1.png" class="qube">
+            </div>
+            <div style="text-align: center;"class="deadline">
+                <label for="demo">Timp ramas:</label>
+                <p id="demo"></p>
+            </div>
+            <div style="text-align: center" class="Regulament">
+                
+                <a href="Regulament.pdf" download>Regulament Competitie QUBE2SPACE</a>
+            </div>
+            <!-- <div class="jury-cards">
+                <div class="jury1-card">
+                    <img src="image.png" class="jury-image">
+                    <p class="jury-name">Daniel Rosner</p>
+                    <p class="jury-description"><br>Daniel has a passion for electronics and a PhD in IoT and WSN for health-care. He is Lecturer in the Computer Science Department, University POLITEHNICA of Bucharest, specialized on hardware design and wearable devices, and the coordinator of CISL41 Robotics and Applied Electronics Laboratory, while in 2016 Daniel mentored team ENTy - the winner of the Microsoft Imagine Cup Seattle '16 international competition, with a med-tech wearable device. 
+                    </br>
+                       <br> Daniel is also one of the first wizards of Innovation Labs and current program manager for the foremost accelerator program for tech start-ups in Romania, a national level accelerator program for early stage, pre-seed tech startups, empowering over 70 teams per cohort to make their start-up vision real. In 2015 Daniel was part of Forbes' 30under30, while in 2017 Daniel was part of the IVLP Entrepreneurship and Small Business Development 2017 program. In 2019, Daniel coordinated the 1st edition of the Romanian - Israel Partnership Accelerator Program.</p>
+                </br> </p>
+                <div class="read-more">Citeste mai mult</div>
+                    </div>
+                    
+            </div>
+        </div> -->
+
+        <div id="juries">
+            
+            <div class="juries-container">
+                <h1>{{ $t("juries.header") }}</h1>
+              <div
+                class="card"
+                v-for="(jury, index) in juries"
+                :key="index"
+                :class="{'card--extended' : isExtended[index],
+                         'card--not-extended' : !isExtended[index],
+                         'left' : index % 3 == 0,
+                         'right' : (index + 1) % 3 == 0,
+                         'right-mobile' : (index % 2 != 0),
+                         'left-mobile' : (index % 2 == 0)}"
+                :style="{ position: isExtended[index] && 'relative' }"
+              >
+                <img
+                  class="jury-image"
+                  :src="jury.photo"
+                  loading="lazy"
+                >
+                <p
+                  class="jury-name"
+                >
+                  {{ jury.name }}
+                </p>
+                <p
+                  class="jury-title"
+                >
+                  {{ $t(`jurys.jury[${index}].title`) }}
+                </p>
+                <p class="jury-description">
+                  {{ $t(`jurys.jury[${index}].description`) }}
+                </p>
+                <div
+                  @click="handleExtend(index)"
+                  class="jury-read-more"
+                >
+                  {{ readMore[index] }}
+                </div>
+                <img
+                  @click="handleExtend(index)"
+                  :v-if="isExtended[index]"
+                  class="arrow"
+                  src="@/assets/images/ionic-ios-arrow-dropup.svg"
+                >
+              </div>
+            </div>
+
+           
+             
+               
+            </main>
+        </div>
+        
+        <script>
+         import jurys from "text.js";   
+        import juries from "juries.js";
+
+        export default {
+  data() {
+    return {
+      jurys,
+      isExtended: new Array(this.$t("juries.jury").length).fill(false),
+      readMore: new Array(this.$t("juries.jury").length).fill("read more..."),
+    };
+  },
+  methods: {
+    handleExtend(index) {
+      this.isExtended.splice(index, 1, !this.isExtended[index]);
+      if (this.isExtended[index] === true) {
+        this.readMore.splice(index, 1, "read less...");
+      } else {
+        this.readMore.splice(index, 1, "read more...");
+      }
+    },
+  },
+};
+
+// Set the date we're counting down to
+var countDownDate = new Date("June 17, 2022 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+            var isclicked=false;
+            function openNav() {
+                isclicked=!isclicked;
+                if(isclicked){
+                    document.getElementById("mySidenav").style.width = "350px";
+                    document.getElementById("mySidenav").style.opacity = "100%";
+                }
+                else{
+                    document.getElementById("mySidenav").style.width = "0px";
+                    document.getElementById("mySidenav").style.opacity = "0%";
+                }
+            
+            }
+        </script>
+        <script>
+            var load = document.getElementById("loading");
+            var loadbg = document.getElementById("loading_background");
+            function loadedpage(){
+                load.style.display = 'none';
+                loadbg.style.display = 'none';
+            }
+        </script>
+</body>
+</html>

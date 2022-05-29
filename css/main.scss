@@ -126,7 +126,6 @@ header{
     margin-top: auto; 
     margin-bottom: auto;
     width: 100%;
-    height: auto;
     position: absolute;
     z-index: 0;
     overflow: hidden;
@@ -236,14 +235,14 @@ main {
 
 @keyframes anim1 {
     from {
-      transform: translateY(-100px);
+      transform: translateY(50px);
       opacity: 0;
     }
     to  {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
 h1 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -300,6 +299,11 @@ model-viewer {
         transition: 0.5s;
     }
 }
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 #loading {
     position: fixed;
     left: 50%;
@@ -331,14 +335,15 @@ model-viewer {
 form{
     margin: 3rem;
 }
-input{
-    font-size: 15px;
-    border-radius: 5px;
-    margin: 0.5rem;
-    border-bottom: #3d1293;
-    border-style: solid;
-}
-button{
+
+// input{
+//     font-size: 15px;
+//     border-radius: 5px;
+//     margin: 0.5rem;
+//     border-bottom: #3d1293;
+//     border-style: solid;
+// }
+.submit{
     border-radius: 20px;
     background-color: #3d1293;
     color: #ffffff;
@@ -347,7 +352,74 @@ button{
     width: 100px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
+    font-size: 13px;
     font-family: Poppins;
     font-weight: 400;
+    cursor: pointer;
+}
+$primary: #7b1897;
+$secondary: #ef3838;
+$white: rgb(0, 0, 0);
+$gray: #000000;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
 }
