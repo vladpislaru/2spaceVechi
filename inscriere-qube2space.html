@@ -35,10 +35,10 @@
             <div class="wrappercuprins">
                 <form action="https://getform.io/f/5e5ef60b-0dab-4e9d-b338-d4b9d6f6f355" method="POST" enctype="multipart/form-data" style="text-align: center;">
                     <h3 style="text-align: center; font-size: 40px; font-weight: 700; background: -webkit-linear-gradient(45deg,#6200ff, #ff1500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">FORMULAR INSCRIERE</h3>
-                    <h2>Nume echipa</h2>
+                    <h2>Nume echipă</h2>
                     <div class="form__group field">
                         <input type="text" class="form__field" placeholder="Nume echipa*" name="nume echipa" id='name' required>
-                        <label for="name" class="form__label">Nume echipa*</label>
+                        <label for="name" class="form__label">Nume echipă*</label>
                     </div>
                     <h2>Team Leader</h2>
                     <div style="display: flex; flex-direction:column; margin-left: auto; margin-right: auto;">
@@ -55,8 +55,8 @@
                             <label for="name" class="form__label">E-mail*</label>
                         </div>
                         <div class="form__group field">
-                            <input type="text" class="form__field" required name="clasa team leader" placeholder="Clasa, Profil*">
-                            <label for="name" class="form__label">Clasa, Profil*</label>
+                            <input type="text" class="form__field" required name="clasa team leader" placeholder="Clasă, Profil*">
+                            <label for="name" class="form__label">Clasă, Profil*</label>
                         </div>
                     </div>
                     <h2>Profesor coordonator</h2>
@@ -77,7 +77,7 @@
                         
                         
                     </div>
-                    <h2>Membri echipa</h2>
+                    <h2>Membri echipă</h2>
                     <div id="echipa" style="display: flex; flex-direction:column; margin-left: auto; margin-right: auto;">
                         
                         <div class="form__group field">
@@ -85,20 +85,20 @@
                             <label for="name" class="form__label">Nume Prenume 1*</label>
                         </div>
                         <div class="form__group field">
-                            <input type="text" class="form__field" required name="clasa membru 1" placeholder="Clasa, Profil 1*">
-                            <label for="name" class="form__label">Clasa, Profil 1*</label>
+                            <input type="text" class="form__field" required name="clasa membru 1" placeholder="Clasă, Profil 1*">
+                            <label for="name" class="form__label">Clasă, Profil 1*</label>
                         </div>
                         <div class="form__group field">
                             <input type="text" class="form__field" required name="nume membru 2" placeholder="Nume Prenume 2*">
                             <label for="name" class="form__label">Nume Prenume 1*</label>
                         </div>
                         <div class="form__group field">
-                            <input type="text" class="form__field" required name="clasa membru 2" placeholder="Clasa, Profil 2*">
-                            <label for="name" class="form__label">Clasa, Profil 2*</label>
+                            <input type="text" class="form__field" required name="clasa membru 2" placeholder="Clasă, Profil 2*">
+                            <label for="name" class="form__label">Clasă, Profil 2*</label>
                         </div>
                     </div>
                     <p id="addmember" onclick="addMember()" style="cursor: pointer;"><span style=" font-size: 20px; font-weight: 700; background: -webkit-linear-gradient(45deg,#6200ff, #ff1500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">+</span> Add member</p>
-                    <h2>Motivatie</h2>
+                    <h2>Motivație</h2>
                     <h5>Ce vă motivează să participați la acest concurs?*</h5>
                     <br>
                     <div class="form__group field">
@@ -134,7 +134,7 @@
                     nume.className="form__group field";
                     clasa.className="form__group field";
                     nume.innerHTML=`<input type="text" class="form__field" name="nume membru ${countmembri}" placeholder="Nume Prenume ${countmembri}"> <label for="name" class="form__label">Nume Prenume ${countmembri}</label> `;
-                    clasa.innerHTML=`<input type="text" class="form__field" name="clasa membru ${countmembri}" placeholder="Clasa, Profil ${countmembri}"> <label for="name" class="form__label">Clasa, Profil ${countmembri}</label>`;
+                    clasa.innerHTML=`<input type="text" class="form__field" name="clasa membru ${countmembri}" placeholder="Clasă, Profil ${countmembri}"> <label for="name" class="form__label">Clasă, Profil ${countmembri}</label>`;
                     document.getElementById("echipa").appendChild(nume);
                     document.getElementById("echipa").appendChild(clasa);
                     if(countmembri==7){
