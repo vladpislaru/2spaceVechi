@@ -1,0 +1,290 @@
+body {
+    /* height: fit-content !important; */
+    background-image: url("/fundal.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: #FFFFFF;
+    /* height: 100%; */
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerform {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    display: block !important;
+    text-align: center !important;
+}
+
+.form {
+    text-align: center;
+    background-color: #6c23eb47;
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    
+    border-radius: 4%;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+
+.TLProf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.Team-Leader {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nume-tl,
+.telefon-tl,
+.mail-tl,
+.clasa-tl,
+.profil-tl {
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 7% 7% 7% 7%;
+}
+
+.Profesor-Coordonator {
+    display: flex;
+    flex-direction: column;
+}
+
+.nume-prof,
+.telefon-prof,
+.mail-prof,
+.clasa-prof,
+.profil-prof {
+    width: 20vw;
+    margin-bottom: 20px;
+}
+
+.members1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.members2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.m {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    margin-bottom: 20px;
+}
+
+.motivndocs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.motivatie {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.docs {
+    margin-top: 2vh;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.check {
+    text-align: center;
+}
+
+.intro-text {
+    width: 50vw;
+    height: auto;
+    border: blue;
+    font-size: large;
+}
+
+
+.qube {
+    height: 50vh;
+    width: auto;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.deadline {
+    width: 50vw;
+    height: auto;
+    color: #fbffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.demo {
+    display: flex;
+    justify-content: row;
+}
+
+.dlndocs {
+    display: flex;
+    flex-direction: row;
+}
+
+.Regulament {
+    text-align: center;
+    margin: auto;
+}
+/* 
+.jury-image {
+    width:40vw;
+    height:30vw;
+    text-align: absolute;
+}
+
+.jury-name {
+    display: inline-block;
+    width: 16vw;
+    background-color: blue;
+    font-size: calc(.14286px + 1.6369vw);
+    color: #fcfcfc;
+  
+    font-weight: 300;
+    padding: 0.2em 0;
+    position: relative;
+}
+
+.jury-name p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.jury-description {
+    font-size: 1.25vw;
+    font-family: Quicksand;
+    color: #002626;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1em;
+    max-height: 4em;
+}
+
+/* .jury-description p { */
+/* display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+
+
+.jury1-card,
+.jury2-card {
+    /* border: 0.4vw solid #802036;
+    box-sizing: border-box;
+    z-index: 2;
+    width: 60%;
+    background-color: #eee;
+    transition: width .5s ease-out,height .5s ease-out,transform .5s ease-out;
+    margin-bottom: 10%;
+    position: relative; */
+    width: 100%;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.right-card {
+    top: 20px;
+    width: 50vw;
+    height: 60vh;
+
+    justify-content: center;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-card {
+    /* top: 20px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-self: left;
+    flex-basis: 35%;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left; */
+    top: 20px;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-self: center;
+    flex-basis: 35%;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+
+}
+
+.jury-image {
+    /* width:20vw;
+height: auto; */
+
+}
+
+p.jury-name {
+    margin-bottom: 0px !important;
+    display: block;
+}
+
+.jury-title {
+    margin-top: 0px !important;
+}
+
+.jurati,
+.partners-title {
+    color: white;
+    font-size: 50px;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+
+}
+
+.partners-column {
+    height: 50vh;
+
+    row-gap: 9vh;
+}
