@@ -300,6 +300,10 @@ p.jury-name {
 
 }
 
+.jury-image-mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
 
 .home {
@@ -325,8 +329,14 @@ p.jury-name {
     width: 95%;
 }
 
-.deadline, .Regulament{
+.deadline, .Regulament p{
     width: 100%;
+    font-size: 1.5em !important;
+    font-weight: normal;
+}
+
+.Regulament a{
+    font-size: 1em !important;
 }
 
 .left-card, .right-card {
@@ -338,6 +348,7 @@ p.jury-name {
 .jury-image {
     width: 100% !important;
     margin-top: 0% !important;
+    display: none;
 }
 
 .jury-title, .jury-name {
@@ -348,6 +359,8 @@ p.jury-name {
 .jury-name-mobile-rosner, .jury-title-mobile-rosner {
     display:flex ;
     font-size: 2rem !important;
+    text-align: center;
+    margin: auto;
 }
 
 .partners-column {
@@ -367,5 +380,15 @@ p.jury-name {
 padding-top: 0% !important;
     margin-top: 0% !important;
 }
+#demo {
 
+    width:100%;
+}
+
+.jury-image-mobile {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 0% !important;
+    border-radius: 50%;
+}
 }
