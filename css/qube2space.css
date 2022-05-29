@@ -125,7 +125,7 @@ main {
 
 
 .qube {
-    height: 50vh;
+    height: 45vh;
     width: auto;
 }
 
@@ -156,8 +156,6 @@ main {
 .Regulament {
     text-align: center;
     margin: auto;
-    margin-left: 0;
-    margin-right: 30px;
 }
 
 
