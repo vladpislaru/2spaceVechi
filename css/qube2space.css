@@ -157,6 +157,8 @@ main {
 .Regulament {
     text-align: center;
     margin: auto;
+    margin-left: 0;
+    margin-right: 30px;
 }
 
 
