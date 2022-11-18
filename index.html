@@ -121,6 +121,7 @@
                         major international rocket-modelling 
                         competitions.
                     </p>
+
                     <div style="display: flex; flex-direction: row;  align-items: center; justify-content: center;">
 
                     <img  src="WhatsApp Image 2022-07-12 at 11.50.05 PM.jpeg" alt="">
@@ -155,7 +156,56 @@
                             })
                         </script>
                     </div>
+                    
                 </div>
+                <h3 style="font-weight: 500; display:block;  text-align: center; font-size:50px; color: rgb(0, 0, 0); position: relative;">
+                    PROJECT <span style="font-weight: 700; background: linear-gradient(63deg, rgb(242, 168, 168) 2.9%, rgb(94, 46, 165) 102.1%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">LUNA</span>
+                </h3>
+                <p class="anim" data-delay=".1s" style="font-weight: 300;font-size: 20px; text-align: justify; margin: 2rem; margin-bottom: 5rem;">
+                    Our actual project, LUNA represents 
+                    a new challenge to implement the 
+                    accumulated  knowledge and break 
+                    another barrier between us and our 
+                    long term goal: becoming one of 
+                    the best student rocketry team. 
+                    It is a long journey but we enjoy 
+                    every step we take.
+                    <br> Launch rail departure velocity: 143.9960544km/h
+                    <br> Maximum velocity: 2,185.2002016km/h
+                </p>
+
+                <div id="Sponsors">
+                    <model-viewer camera-orbit="0deg 95deg" id="sphere" camera-controls interaction-prompt-threshold="50" bounds="tight" src="models/Luna v12.glb" ar ar-placement="floor" ar-scale="fixed" ar-modes="webxr scene-viewer quick-look" alt="A 3D model of a sphere" >
+                        <div class="controls" style="display: none;">
+                            <span id="metalness-value"></span>
+                            <span id="roughness-value"></span>
+                        </div>
+                    </model-viewer>
+                    <script>
+                        const modelViewerParameters1 = document.querySelector("model-viewer#sphere");
+                        
+                        modelViewerParameters1.addEventListener("load", (ev) => {
+                        
+                            let material = modelViewerParameters1.model.materials[0];
+                        
+                            let metalnessDisplay = document.querySelector("#metalness-value");
+                            let roughnessDisplay = document.querySelector("#roughness-value");
+                        
+                            metalnessDisplay.textContent = material.pbrMetallicRoughness.metallicFactor;
+                            roughnessDisplay.textContent = material.pbrMetallicRoughness.roughnessFactor;
+                        
+                            
+                            material.pbrMetallicRoughness.setBaseColorFactor([0.5, 0.5, 0.5]);
+                        
+                            material.pbrMetallicRoughness.setMetallicFactor(1);
+                        
+                            material.pbrMetallicRoughness.setRoughnessFactor(0.3);
+                        })
+                    </script>
+                </div>
+                
+                <br>
+
                     <h2 style="font-weight: 600; font-size: 40px; text-align: center;">SPONSORS</h2>
                         <div style="display: flex; flex-direction: column;  align-items: center; justify-content: center;">
                             <div class="sponsorlogo">
@@ -246,21 +296,29 @@
                 </div>
                 <img src="20220705_160227.jpg" style="display:block; margin-top: 10rem; margin-left: auto;margin-right: auto; width: 100%; height: auto;" alt="">
                 <div id="Contact" style="display: flex;height: 500px;width: 100%;overflow: hidden;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11395.533201233133!2d26.0437072!3d44.435556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39b9e6d086b107fa!2sCentrul%20CAMPUS!5e0!3m2!1sro!2sro!4v1645142977383!5m2!1sro!2sro" width="50%" height="100%" style=" display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; overflow: hidden; border: 0;" allowfullscreen="" loading="lazy" title="Map"></iframe>
-                    <div style="background-color: rgb(14, 14, 14); width: 50%;">
-                        <div style="background-color: rgb(14, 14, 14); display: grid; grid-template-columns: repeat(auto-fit, minmax(5rem, 7rem));justify-content: center; grid-gap: 2rem; margin-left: auto; margin-right: auto; height: 500px;">
-                            <a href="https://www.facebook.com/Students2Space/"style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
-                                <img src="images/facebook.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
-                            </a>
-                            <a href="https://instagram.com/students2space"style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
-                                <img src="images/instagram.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
-                            </a>
-                            <a href="https://www.linkedin.com/company/students2space"style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
-                                <img src="images/linkedin.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
-                            </a>
-                            <a href="mailto: contact@students.2space.ro" style=" margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11395.533201233133!2d26.0437072!3d44.435556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39b9e6d086b107fa!2sCentrul%20CAMPUS!5e0!3m2!1sro!2sro!4v1645142977383!5m2!1sro!2sro" width="100%" height="100%" style=" display: block;margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; overflow: hidden; border: 0;" allowfullscreen="" loading="lazy" title="Map"></iframe>
+                </div>
+                <div id="Contact" style="display: flex;height: 100px;width: 100%;overflow: hidden;">
+                    <div style="background-color: rgb(14, 14, 14); width: 100%;">
+                        <div style="background-color: rgb(14, 14, 14); display: grid; grid-template-columns: repeat(auto-fit, minmax(5rem, 7rem));justify-content: center; grid-gap: 2rem; margin-left: auto; margin-right: auto; height: 100%;">
+                            <a href="https://www.facebook.com/Students2Space/" style="display: flex; justify-content: center; align-items: center; " >
                                 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                                    <img src="images/mail.png" alt="" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                    <img src="images/facebook.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                </div>
+                            </a>
+                            <a href="https://instagram.com/students2space"  style="display: flex; justify-content: center; align-items: center; ">
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                                    <img src="images/instagram.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/students2space" style="display: flex; justify-content: center; align-items: center; ">
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                                    <img src="images/linkedin.png" style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
+                                </div>
+                            </a>
+                            <a href="mailto: contact@students.2space.ro" style="display: flex; justify-content: center; align-items: center; "> 
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                                    <img src="images/mail.png"  style="margin-top: auto;margin-bottom: auto; margin-left: auto; margin-right: auto; width: 25px; height: 25px;">
                                     <span style="color: white; text-decoration: none; font-size: 10px;">contact@students.2space.ro</span>
                                 </div>
                             </a>
