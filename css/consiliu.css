@@ -83,4 +83,8 @@ li{
         display: flex;
         flex-direction: column;
     }
+
+    .council-block{
+        width: 100%;
+    }
 }
