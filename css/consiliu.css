@@ -1,0 +1,86 @@
+html, body{
+    background-image: url("../images/stelute4.png");
+    background-color: black;
+    background-repeat: repeat;
+    height: 100vh;
+    width: auto;
+    color:white;
+}
+
+.section{
+   padding-bottom: 1vh;
+}
+
+.council-title{
+    background-color: #6444ff;
+    width: 350px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+.council-section{
+    font-family: 'Poppins', sans-serif;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    width: 80%;
+}
+.council-title > h1, h2{
+    text-align: center;
+}
+
+h2{
+    margin-top: 50px;
+}
+
+.council-explanation{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+.council-block{ 
+    align-items: center;
+    align-content: center;
+    width: 40%;
+}
+.council-h2{
+    background-color: #6444ff;  
+    border-radius: 20px;
+    padding: 10px;
+
+
+}
+.council-definition{
+    margin:auto;
+    align-content: center;
+
+}
+
+.council-responsibilities{
+    
+    margin-left:1vw;
+}
+li{
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.special-h2{
+    background-color: #6444ff;  
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px){
+    .council-explanation{
+        display: flex;
+        flex-direction: column;
+    }
+}
