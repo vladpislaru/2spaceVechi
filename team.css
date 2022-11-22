@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+    background-image: url("stelutzeeeeeeeeeee.png");
+    background-size: cover;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+  }

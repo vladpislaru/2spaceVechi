@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Space</title>
+    <link rel="icon" type="image/x-icon" href="images/simb-neutru-negru2.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="team.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="loadedpage()">
+    <!-- <div id="loading_background" style="background-color: #ffffff; width: 100%; height: 100%; position: fixed; z-index: 999; filter: invert(1);">
+            <img src="images/simb-neutru-alb2.png" style="display: block; position: fixed; filter: invert(1); width: 60px; height: 60px;left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; " alt="">
+            </div> <div id="loading">
+        </div> -->
+    <div>
+        <header>
+            <a href="/index.html" class="logo"><img src="images/simb-neutru-alb2.png" style="width: 25px; height: 25px;"
+                    alt=""></img></a>
+            <img class="menu" src="images/menu_white.png" onclick="openNav()" alt=""></img>
+
+            <nav>
+                <div id="mySidenav" class="sidenav">
+                    <ul>
+                        <li><a href="index.html#About" onclick="openNav()">About</a></li>
+                        <!-- <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li> -->
+                        <li><a href="qube2space.html" onclick="openNav()">QUBE2SPACE</a></li>
+                        <li><a href="3d.html" onclick="openNav()">Project EVA</a></li>
+                        <li><a href="index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                        <li><a href="index.html#Contact" onclick="openNav()">Contact</a></li>
+                        <li><a href="sponsors.html" onclick="openNav()">Support Us</a></li>
+                        <!-- <li><a href="join.html" onclick="openNav()">Join Us</a></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("June 24, 2022 23:59:59").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+    var isclicked = false;
+    function openNav() {
+        isclicked = !isclicked;
+        if (isclicked) {
+            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("mySidenav").style.opacity = "100%";
+        }
+        else {
+            document.getElementById("mySidenav").style.width = "0px";
+            document.getElementById("mySidenav").style.opacity = "0%";
+        }
+    }
+    var load = document.getElementById("loading");
+    var loadbg = document.getElementById("loading_background");
+    function loadedpage() {
+        load.style.display = 'none';
+        loadbg.style.display = 'none';
+    }
+</script>
+</body>
+
+</html>

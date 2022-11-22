@@ -2,9 +2,11 @@ html, body{
     background-image: url("../images/stelute4.png");
     background-color: black;
     background-repeat: repeat;
+    
     height: 100vh;
     width: auto;
-    color:white;
+    color:white; 
+
 }
 
 .section{
@@ -78,6 +80,30 @@ li{
     padding: 5px;
 }
 
+.council-runners {
+    width: 100%;
+    margin: auto;
+    margin-top: 1vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.council-runners img {
+    height: 40vh; 
+    width: auto; 
+    border-radius: 50%;
+}
+
+
+.runner-name {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 5vh;
+    padding-bottom: 2vh;  
+}
 @media screen and (max-width: 1200px){
     .council-explanation{
         display: flex;
@@ -86,5 +112,17 @@ li{
 
     .council-block{
         width: 100%;
+    }
+
+    .council-runners{
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-around;
+    }
+
+    .council-runners img {
+        height: 40vh; 
+        width: auto; 
+        border-radius: 50%;
     }
 }

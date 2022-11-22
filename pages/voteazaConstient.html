@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../images/simb-neutru-negru2.png">
     <link rel="stylesheet" type="text/css" href="../css/consiliu.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     
+    <div>
+        <header>
+            <a href="../index.html" class="logo"><img src="../images/simb-neutru-alb2.png" style="width: 25px; height: 25px;"
+                    alt=""></img></a>
+            <img class="menu" src="../images/menu_white.png" onclick="openNav()" alt=""></img>
+
+            <nav>
+                <div id="mySidenav" class="sidenav">
+                    <ul>
+                        <li><a href="../index.html#About" onclick="openNav()">About</a></li>
+                        <!-- <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li> -->
+                        <li><a href="../qube2space.html" onclick="openNav()">QUBE2SPACE</a></li>
+                        <li><a href="../3d.html" onclick="openNav()">Project EVA</a></li>
+                        <li><a href="../index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                        <li><a href="../index.html#Contact" onclick="openNav()">Contact</a></li>
+                        <li><a href="../sponsors.html" onclick="openNav()">Support Us</a></li>
+                        <!-- <li><a href="join.html" onclick="openNav()">Join Us</a></li> -->
+                        <li><a href="voteazaConstient.html" onclick="openNav()">Votează conștient</a></li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+   
+    </div>
+
+    
     <div class="section">
         <div class="council-title">
-            <h1 >Voteaza consitent</h1>
+            <h1 >Votează conștient</h1>
         </div>
         <div class="council-section">
             <h2>Ce este consiliul facultății?</h2>
@@ -50,8 +82,43 @@
             <h2>14 decembrie : Afișarea rezultatelor finale </h2>
         </div>
     </div>
-    <div class="wallimg">
+
+    <div class="council-runners">
+        <div class="runner-card">
+            <img src="../chelmus.jpeg" class="runner-image">
+            <p class="runner-name">Cătălin Chelmuș</p>
+        </div>
+        <div class="runner-card">
+            <img src="../chelmus.jpeg" class="runner-image">
+            <p class="runner-name">Andreea Ghiță</p>
+        </div>
+        <div class="runner-card">
+            <img src="../chelmus.jpeg" class="runner-image">
+            <p class="runner-name">Rareș Minescu</p>
+        </div>
+    </div>
+    <!-- <div class="wallimg"> -->
         
     </div>
+    <script>
+        var isclicked = false;
+    function openNav() {
+        isclicked = !isclicked;
+        if (isclicked) {
+            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("mySidenav").style.opacity = "100%";
+        }
+        else {
+            document.getElementById("mySidenav").style.width = "0px";
+            document.getElementById("mySidenav").style.opacity = "0%";
+        }
+    }
+    var load = document.getElementById("loading");
+    var loadbg = document.getElementById("loading_background");
+    function loadedpage() {
+        load.style.display = 'none';
+        loadbg.style.display = 'none';
+    }
+</script>
 </body>
 </html>
