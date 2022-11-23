@@ -1,11 +1,14 @@
-html, body{
+html{
+    scroll-behavior: smooth;
+    size: 100%;
+}
+body{
     background-image: url("../images/stelute4.png");
     background-color: black;
     background-repeat: repeat;
-    
-    height: 100vh;
-    width: auto;
+    size:100%;
     color:white; 
+    padding: 0;
 
 }
 
@@ -36,7 +39,14 @@ html, body{
 }
 
 h2{
+    color: white;
     margin-top: 50px;
+}
+
+.h1-white{
+    background: -webkit-linear-gradient(90deg, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .council-explanation{
@@ -83,14 +93,19 @@ li{
 .council-runners {
     width: 100%;
     margin: auto;
-    margin-top: 1vh;
-    
+    margin-top: 5vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.row-council{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
-
 .council-runners img {
+    border: 0.3vw solid #6444ff;
     height: 40vh; 
     width: auto; 
     border-radius: 50%;
@@ -100,11 +115,47 @@ li{
 .runner-name {
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 5vh;
     padding-bottom: 2vh;  
 }
-@media screen and (max-width: 1200px){
+
+.logo-title{
+    text-align: center;
+    align-items: center;
+}
+
+.logo-img{
+    width: 25vw;
+    height: auto;
+    margin: auto;
+    z-index: 10;
+}
+
+#Contact{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 100px;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #6444ff;
+}
+
+#Contact > a{
+    display: flex; 
+    margin:auto;
+    justify-content: center; 
+    align-items: center; 
+}
+
+a > img {
+    margin: auto;
+    width: 25px; height: 25px;
+}
+
+@media screen and (max-width: 800px){
+
     .council-explanation{
         display: flex;
         flex-direction: column;
@@ -118,11 +169,28 @@ li{
         display: flex;
         flex-wrap: row;
         justify-content: space-around;
+        text-align: center;
+        
     }
 
     .council-runners img {
-        height: 40vh; 
+        height: 30vh; 
         width: auto; 
         border-radius: 50%;
     }
+
+    .row-council{
+        flex-direction: column;
+    }
+    .logo-img{
+        width: 50%;
+    }
+
+    .runner-name {
+      
+        padding-top: 0.1vh;
+        padding-bottom: 2vh;  
+    }
+    
+
 }

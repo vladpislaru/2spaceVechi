@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="../images/simb-neutru-negru2.png">
-    <link rel="stylesheet" type="text/css" href="../css/consiliu.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/consiliu.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
     
     <div class="section">
         <div class="council-title">
-            <h1 >Votează conștient</h1>
+            <h1 class="h1-white">Votează conștient</h1>
         </div>
         <div class="council-section">
             <h2>Ce este consiliul facultății?</h2>
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="council-title">
-            <h1 >Calendarul alegerilor</h1>
+            <h1 class="h1-white" >Calendarul alegerilor</h1>
         </div>
         <div class="council-section">
             <h2>21 noiembrie : Afișarea listei cu studenții care candidează </h2>
@@ -81,43 +81,65 @@
             <h2>14 decembrie : Afișarea rezultatelor finale </h2>
         </div>
     </div>
-
+    <div class="logo-title">
+        <img src="../images/logo1.png" class="logo-img">
+    </div>
     <div class="council-runners">
-        <div class="runner-card">
-            <img src="../chelmus.jpeg" class="runner-image">
-            <p class="runner-name">Cătălin Chelmuș</p>
+        
+        <div class="row-council">
+            <div class="runner-card">
+                <img src="../images/chelmus.jpeg" class="runner-image">
+                <p class="runner-name">Cătălin Chelmuș</p>
+            </div>
         </div>
-        <div class="runner-card">
-            <img src="../chelmus.jpeg" class="runner-image">
-            <p class="runner-name">Andreea Ghiță</p>
-        </div>
-        <div class="runner-card">
-            <img src="../chelmus.jpeg" class="runner-image">
-            <p class="runner-name">Rareș Minescu</p>
+        
+        <div class="row-council">
+            <div class="runner-card">
+                <img src="../images/Andreea.jpeg" class="runner-image">
+                <p class="runner-name">Andreea Ghiță</p>
+            </div>
+            <div class="runner-card">
+                <img src="../images/Minescu.jpeg" class="runner-image">
+                <p class="runner-name">Rareș Minescu</p>
+            </div>
         </div>
     </div>
     <!-- <div class="wallimg"> -->
         
     </div>
+    <div id="Contact">
+        <a href="https://www.facebook.com/Students2Space/" >
+            <img src="../images/facebook.png" >
+        </a>
+        <a href="https://instagram.com/students2space" >
+            <img src="../images/instagram.png" >
+        </a>
+        <a href="https://www.linkedin.com/company/students2space" >
+            <img src="../images/linkedin.png" >
+        </a>
+        <a href="mailto: contact@students.2space.ro" >
+            <img src="../images/mail.png" >
+        </a>
+    </div>
     <script>
-        var isclicked = false;
-    function openNav() {
-        isclicked = !isclicked;
-        if (isclicked) {
-            document.getElementById("mySidenav").style.width = "350px";
-            document.getElementById("mySidenav").style.opacity = "100%";
+            var isclicked = false;
+        function openNav() {
+            isclicked = !isclicked;
+            if (isclicked) {
+                document.getElementById("mySidenav").style.width = "350px";
+                document.getElementById("mySidenav").style.opacity = "100%";
+            }
+            else {
+                document.getElementById("mySidenav").style.width = "0px";
+                document.getElementById("mySidenav").style.opacity = "0%";
+            }
         }
-        else {
-            document.getElementById("mySidenav").style.width = "0px";
-            document.getElementById("mySidenav").style.opacity = "0%";
+        var load = document.getElementById("loading");
+        var loadbg = document.getElementById("loading_background");
+        function loadedpage() {
+            load.style.display = 'none';
+            loadbg.style.display = 'none';
         }
-    }
-    var load = document.getElementById("loading");
-    var loadbg = document.getElementById("loading_background");
-    function loadedpage() {
-        load.style.display = 'none';
-        loadbg.style.display = 'none';
-    }
-</script>
+    </script>
 </body>
 </html>
