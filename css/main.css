@@ -213,6 +213,7 @@ header {
 }
 
 .sponsorlogo {
+  width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,8 +227,13 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-top: 20px;
 }
-
+@media screen and (max-width: 650px) {
+  .sponsorlogo {
+    width: 100%;
+  }
+}
 .sponsorlogo .sponsorimg {
   width: 135px;
   height: 135px;
