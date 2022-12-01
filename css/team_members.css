@@ -9,8 +9,13 @@ body{
     size:100%;
     color:white; 
     padding: 0 1rem;
-    /* overflow: scroll; */
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .title-div{
     width: 100%;
@@ -59,7 +64,7 @@ h2{
     /* border: 2px solid white; */
 }
 .profile-img{
-    width: 250px;
+    width: 300px;
     border: 2px solid white;
     box-shadow: -8px 8px 8px -4px rgb(255 255 255 / 0.6);
     
@@ -109,6 +114,7 @@ h2{
     margin-top: 10px;
     justify-content: center;
     text-align: center;
+    
 }
 
 
@@ -126,6 +132,7 @@ h2{
 }
 .dp-leader{
     display: flex;
+    max-width: fit-content;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -133,8 +140,9 @@ h2{
     margin: auto;
 }
 
+
 .profile-container > .profile-img{
-    width: 120px;
+    width: 150px;
     display: block;
 }
 .dp-leader > h3{
@@ -146,7 +154,7 @@ h2{
     
 }
 .overlay > h4{
-    font-size: 1em;
+    font-size: 0.8em;
     width:75%;
     margin-bottom: 20px;
     text-align: center;
@@ -164,7 +172,7 @@ h2{
 
 .profile-container{
     position: relative;
-    width: 150px;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -378,6 +386,7 @@ header {
     }
     .overlay > h4{
         font-size: 0.7em !important;
+        width: 100px;
     }
     
 
@@ -387,16 +396,28 @@ header {
     .profile-container{
         width: 100%;
     }
-    .dp-leader{
-        width: 100%;
-    }
+
     .profile-container > .profile-img{
         width: 200px;
     }
+
     .overlay>h4{
         width: 150px;
+        font-size: 1rem;
         text-align: center;
         justify-content: center;
+    }
+
+    h3#shrink-font-size{
+        font-size: 1.2rem;
+    }
+
+    h4#shrink-font-size{
+        width: 150px !important;
+        font-size: 1rem !important;
+    }
+    .dp-leader{
+        margin-top: 25px;
     }
 
 }
