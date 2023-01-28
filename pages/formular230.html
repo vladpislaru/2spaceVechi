@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="../images/simb-neutru-negru2.png">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/formular230.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <header>
+            <a href="../index.html" class="logo"><img src="../images/simb-neutru-alb2.png" style="width: 25px; height: 25px;"
+                    alt=""></img></a>
+            <img class="menu" src="../images/menu_white.png" onclick="openNav()" alt=""></img>
+
+            <nav>
+                <div id="mySidenav" class="sidenav">
+                    <ul>
+                        <li><a href="../index.html#About" onclick="openNav()">About</a></li>
+                        <!-- <li><a href="index.html#EuRoC" onclick="openNav()">EuRoC</a></li> -->
+                        <li><a href="../qube2space.html" onclick="openNav()">QUBE2SPACE</a></li>
+                        <li><a href="../3d.html" onclick="openNav()">Project EVA</a></li>
+                        <li><a href="../index.html#Sponsors" onclick="openNav()">Sponsors</a></li>
+                        <li><a href="../index.html#Contact" onclick="openNav()">Contact</a></li>
+                        <li><a href="../sponsors.html" onclick="openNav()">Support Us</a></li>
+                        <!-- <li><a href="join.html" onclick="openNav()">Join Us</a></li> -->
+                        <li><a href="team_members.html" onclick="openNav()">Team members</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+   
+        <div class="container-formular">
+            <div class="formular-text">
+                <p>Redirecționează <b>3,5%</b> din impozitul pe venit, completand <b>formularul 230</b>!</p>
+            </div>
+           <!-- <div class="formular-buton">
+                <a href="https://www.youtube.com/watch?v=Y54XYKupVKE&ab_channel=AhmedAbdellatif" class="formular-link">FORMULAR</a>
+                
+            </div> -->
+           <!-- <div class="f230ro-lansare f230ro-buton rotund" style="margin: auto; font-size:large">Redirecționează</div> -->
+
+        </div>
+    </div>
+
+    <script src="https://formular230.ro/share/237ec12bc6">
+
+    </script>
+    <script>
+         var isclicked = false;
+        function openNav() {
+            isclicked = !isclicked;
+            if (isclicked) {
+                document.getElementById("mySidenav").style.width = "350px";
+                document.getElementById("mySidenav").style.opacity = "100%";
+            }
+            else {
+                document.getElementById("mySidenav").style.width = "0px";
+                document.getElementById("mySidenav").style.opacity = "0%";
+            }
+        }
+        var load = document.getElementById("loading");
+        var loadbg = document.getElementById("loading_background");
+        function loadedpage() {
+            load.style.display = 'none';
+            loadbg.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
