@@ -548,4 +548,26 @@ form {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+#Contact{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  height: 100px;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #6444ff;
+}
+
+#Contact > a{
+  display: flex; 
+  margin:auto;
+  justify-content: center; 
+  align-items: center; 
+}
+
+a > img {
+  margin: auto;
+  width: 25px; height: 25px;
+}
 /*# sourceMappingURL=main.css.map */
