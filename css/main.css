@@ -228,6 +228,7 @@ header {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 20px;
+
 }
 @media screen and (max-width: 650px) {
   .sponsorlogo {
@@ -242,6 +243,10 @@ header {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /*mix-blend-mode: color-dodge;*/
+
 }
 
 .sponsorlogo .sponsorimg:hover {
