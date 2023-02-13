@@ -1,0 +1,99 @@
+.SponsorsPartners {
+    width: 80vw;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.SP-container {
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.first-row {
+    width: 100%;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+.first-row-home {
+    width: 100%;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo-sponsor {
+    width: 19%;
+    height: 19%;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+.logo-sponsor1 {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+.logo-sponsor2 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+/* 
+.logo-sponsor1 {
+    width: 22%;
+    height: 22%;
+    text-align: center;
+    margin: auto;
+    display: block;
+} */
+
+img.logo-sponsor {
+   width:20%;
+    aspect-ratio: 3/2;
+   object-fit: contain;
+  
+  /* max-width: 100%;
+  max-height: 100%; */
+/* object-fit: fill; */
+
+ 
+}
+
+@media screen and (max-width: 650px) {
+    /* .logo-sponsor {
+      width: 100%;
+    } */
+  .SP-container{
+    display: block;
+        text-align: center;
+        margin: auto;
+  }
+    .first-row .first-row-home{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+.logo-sponsor .logo-sponsor1 .logo-sponsor2 {
+   
+    /*mix-blend-mode: color-dodge;*/
+    
+  
+  }
+   
+}

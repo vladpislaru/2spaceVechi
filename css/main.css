@@ -213,7 +213,8 @@ header {
 }
 
 .sponsorlogo {
-  width: 650px;
+  width: 90%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,17 +237,21 @@ header {
   }
 }
 .sponsorlogo .sponsorimg {
-  width: 135px;
-  height: 135px;
+  width: 30%;
+  height: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%); */
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   aspect-ratio: 3/2;
   object-fit: contain;
   /*mix-blend-mode: color-dodge;*/
 
+}
+
+.sponsorimg img {
+  width: 25%;
 }
 
 .sponsorlogo .sponsorimg:hover {
