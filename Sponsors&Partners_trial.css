@@ -1,0 +1,9 @@
+.partners-column {
+    height:50vh;
+    display: grid;
+    row-gap: 9vh;
+}
+
+.logo {
+    width: 15%;
+}
