@@ -237,7 +237,8 @@ header {
   }
 }
 .sponsorlogo .sponsorimg {
-  width: 30%;
+  width: 20vmax;
+  max-width: 200px;
   height: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -250,9 +251,7 @@ header {
 
 }
 
-.sponsorimg img {
-  width: 25%;
-}
+
 
 .sponsorlogo .sponsorimg:hover {
   -webkit-filter: grayscale(0%);
