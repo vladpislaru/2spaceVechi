@@ -1,0 +1,196 @@
+html{
+    scroll-behavior: smooth;
+    size: 100%;
+}
+body{
+    background-image: url("../images/stelute4.png");
+    background-color: black;
+    background-repeat: repeat;
+    size:100%;
+    color:white; 
+    padding: 0;
+
+}
+
+.section{
+   padding-bottom: 1vh;
+}
+
+.council-title{
+    background-color: #6444ff;
+    width: 350px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+.council-section{
+    font-family: 'Poppins', sans-serif;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    width: 80%;
+}
+.council-title > h1, h2{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    margin-top: 50px;
+}
+
+.h1-white{
+    background: -webkit-linear-gradient(90deg, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.council-explanation{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+.council-block{ 
+    align-items: center;
+    align-content: center;
+    width: 40%;
+}
+.council-h2{
+    background-color: #6444ff;  
+    border-radius: 20px;
+    padding: 10px;
+
+
+}
+.council-definition{
+    margin:auto;
+    align-content: center;
+
+}
+
+.council-responsibilities{
+    
+    margin-left:1vw;
+}
+li{
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.special-h2{
+    background-color: #6444ff;  
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+}
+
+.council-runners {
+    width: 100%;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.row-council{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.council-runners img {
+    border: 0.3vw solid #6444ff;
+    height: 40vh; 
+    width: auto; 
+    border-radius: 50%;
+}
+
+
+.runner-name {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 5vh;
+    padding-bottom: 2vh;  
+}
+
+.logo-title{
+    text-align: center;
+    align-items: center;
+}
+
+.logo-img{
+    width: 25vw;
+    height: auto;
+    margin: auto;
+    z-index: 10;
+}
+
+#Contact{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 100px;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #6444ff;
+}
+
+#Contact > a{
+    display: flex; 
+    margin:auto;
+    justify-content: center; 
+    align-items: center; 
+}
+
+a > img {
+    margin: auto;
+    width: 25px; height: 25px;
+}
+
+@media screen and (max-width: 800px){
+
+    .council-explanation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .council-block{
+        width: 100%;
+    }
+
+    .council-runners{
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-around;
+        text-align: center;
+        
+    }
+
+    .council-runners img {
+        height: 30vh; 
+        width: auto; 
+        border-radius: 50%;
+    }
+
+    .row-council{
+        flex-direction: column;
+    }
+    .logo-img{
+        width: 50%;
+    }
+
+    .runner-name {
+      
+        padding-top: 0.1vh;
+        padding-bottom: 2vh;  
+    }
+    
+
+}

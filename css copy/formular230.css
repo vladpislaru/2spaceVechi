@@ -1,0 +1,66 @@
+html{
+    scroll-behavior: smooth;
+    size: 100%;
+}
+body{
+    background-image: url("../images/desktop_formular.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 0;
+}
+
+.container-formular {
+    
+width: 25vw;
+height: auto;
+display: flex;
+flex-direction: column;
+margin-left: 38%;
+margin-top: 10vh;
+
+}
+
+.formular-text {
+    font-size: 40px ;
+    color: aliceblue;
+    text-align: center;
+}
+
+.formular-buton {
+    text-align: center;
+    background-color: transparent;
+    border-style: groove ;
+}
+
+.formular-link {
+    color: aliceblue;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 800px){
+
+body{
+        background-image: url("../images/mobile_redimensionat.png");
+    background-size: cover;
+    }
+
+.container-formular {
+    width: 60vw;
+    height: auto;
+    margin: auto;
+    margin-top: 7vh;
+
+}    
+
+.formular-text {
+    font-size: 1.7rem;
+}
+
+.formular-link {
+    font-size: 1.8rem;
+}
+
+}
